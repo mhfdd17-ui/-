@@ -3,897 +3,671 @@
 <meta name="description" content="خان جليلة — ملحمة الحي الشفافة في حي المنصورة بالرياض. لحم تعرف قصته: هوية الذبيحة، الوزن المضمون، سعر اليوم المعلن، وتوصيل خلال ساعة.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500;600;700&family=Readex+Pro:wght@300;400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" defer></script>
 <style>
-/* Layout: a Najdi khan — burgundy bands crowned with mud-wall crenellations, butcher-paper cards, a violet slaughterhouse stamp as the single loud accent */
+/* Layout: calm khan — wide mud-plaster ground, generous whitespace, only three burgundy bands (hero, story, footer); one hanging carcass tag as the signature */
 :root{
-  --mud:#E6D7BF;          /* page ground: Najdi mud plaster */
-  --paper:#F6EEE1;        /* butcher paper surfaces */
-  --paper-2:#EFE4D2;
-  --ink:#2A1915;          /* text */
-  --ink-2:#6A4F46;        /* muted text */
-  --blood:#7D1A22;        /* brand burgundy */
-  --band:#5C1119;         /* deep band background */
-  --band-2:#4A0D14;
-  --on-band:#F6EEE1;
-  --on-band-2:#E3C9B8;
-  --gold:#C99A3A;         /* gold for marks on dark */
-  --gold-ink:#8A6216;     /* gold readable on paper */
-  --stamp:#4F3C91;        /* violet slaughterhouse ink */
+  --mud:#EFE6D6;
+  --paper:#F9F4EA;
+  --paper-2:#F1E8D9;
+  --ink:#2B1A16;
+  --ink-2:#6E5750;
+  --blood:#7A1A22;
+  --band:#561018;
+  --band-2:#430C13;
+  --on-band:#F7EEE0;
+  --on-band-2:#DCC3B2;
+  --gold:#C99A3A;
+  --gold-ink:#8A6216;
+  --stamp:#4F3C91;
   --wa:#1C9E50;
   --ok:#2F7A3E;
   --warn:#A3471C;
-  --line:rgba(42,25,21,.14);
-  --line-2:rgba(42,25,21,.26);
-  --shadow:0 1px 0 rgba(42,25,21,.06),0 14px 30px -18px rgba(60,20,15,.45);
+  --line:rgba(43,26,22,.10);
+  --line-2:rgba(43,26,22,.20);
+  --shadow:0 1px 0 rgba(43,26,22,.04),0 18px 40px -28px rgba(60,20,15,.45);
 
-  --f-display:"Reem Kufi","IBM Plex Sans Arabic",Tahoma,sans-serif;
-  --f-body:"IBM Plex Sans Arabic",Tahoma,"Segoe UI",sans-serif;
+  --f-display:"Kufam","Readex Pro",Tahoma,sans-serif;
+  --f-body:"Readex Pro",Tahoma,"Segoe UI",sans-serif;
   --f-num:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
 
-  --t-xs:.78rem; --t-sm:.9rem; --t-md:1.02rem; --t-lg:1.25rem; --t-xl:1.7rem; --t-2xl:2.4rem; --t-3xl:clamp(2.6rem,6.4vw,4.6rem);
-  --r:14px; --r-sm:8px;
-  --max:1180px;
+  --t-xs:.8rem; --t-sm:.92rem; --t-md:1.02rem; --t-lg:1.18rem; --t-xl:1.6rem; --t-2xl:clamp(1.8rem,3.4vw,2.4rem); --t-3xl:clamp(2.5rem,6vw,4.2rem);
+  --r:16px; --r-sm:10px;
+  --max:1120px;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --mud:#16100D; --paper:#211713; --paper-2:#2A1E19; --ink:#F1E6D6; --ink-2:#BCA796;
-    --blood:#D0505A; --band:#2C0B10; --band-2:#22080C; --on-band:#F4EADB; --on-band-2:#D5BBA8;
+    --mud:#17110E; --paper:#211814; --paper-2:#2A1F1A; --ink:#F1E6D6; --ink-2:#BCA796;
+    --blood:#D45A63; --band:#2C0B10; --band-2:#22080C; --on-band:#F4EADB; --on-band-2:#D5BBA8;
     --gold:#D9B261; --gold-ink:#D9B261; --stamp:#A493EA; --wa:#2BBE65; --ok:#6CC07D; --warn:#E58A5A;
-    --line:rgba(241,230,214,.12); --line-2:rgba(241,230,214,.24);
-    --shadow:0 1px 0 rgba(0,0,0,.4),0 18px 34px -20px rgba(0,0,0,.8);
+    --line:rgba(241,230,214,.10); --line-2:rgba(241,230,214,.20);
+    --shadow:0 1px 0 rgba(0,0,0,.4),0 18px 34px -22px rgba(0,0,0,.8);
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --mud:#16100D; --paper:#211713; --paper-2:#2A1E19; --ink:#F1E6D6; --ink-2:#BCA796;
-  --blood:#D0505A; --band:#2C0B10; --band-2:#22080C; --on-band:#F4EADB; --on-band-2:#D5BBA8;
+  --mud:#17110E; --paper:#211814; --paper-2:#2A1F1A; --ink:#F1E6D6; --ink-2:#BCA796;
+  --blood:#D45A63; --band:#2C0B10; --band-2:#22080C; --on-band:#F4EADB; --on-band-2:#D5BBA8;
   --gold:#D9B261; --gold-ink:#D9B261; --stamp:#A493EA; --wa:#2BBE65; --ok:#6CC07D; --warn:#E58A5A;
-  --line:rgba(241,230,214,.12); --line-2:rgba(241,230,214,.24);
-  --shadow:0 1px 0 rgba(0,0,0,.4),0 18px 34px -20px rgba(0,0,0,.8);
+  --line:rgba(241,230,214,.10); --line-2:rgba(241,230,214,.20);
+  --shadow:0 1px 0 rgba(0,0,0,.4),0 18px 34px -22px rgba(0,0,0,.8);
   color-scheme:dark;
 }
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{background:var(--mud);color:var(--ink);font-family:var(--f-body);font-size:var(--t-md);line-height:1.75;direction:rtl;text-align:right;-webkit-font-smoothing:antialiased}
+body{background:var(--mud);color:var(--ink);font-family:var(--f-body);font-size:var(--t-md);font-weight:400;line-height:1.85;direction:rtl;text-align:right;-webkit-font-smoothing:antialiased}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--band-2)}
-h1,h2,h3,h4{font-family:var(--f-display);line-height:1.25;margin:0;text-wrap:balance;font-weight:600}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.35;margin:0;text-wrap:balance;font-weight:600}
 p{margin:0}
 a{color:inherit}
 button,input,select,textarea{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
-.num{font-family:var(--f-num);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
-.wrap{max-width:var(--max);margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.eyebrow{font-size:var(--t-xs);letter-spacing:.08em;font-weight:600;color:var(--gold-ink);display:inline-flex;align-items:center;gap:8px}
-.eyebrow::before{content:"";width:18px;height:2px;background:currentColor}
+.num{font-family:var(--f-num);font-variant-numeric:tabular-nums}
+.wrap{max-width:var(--max);margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(72px,10vw,120px)}
+.sec + .sec{padding-top:0}
+.sec-head{display:grid;gap:12px;max-width:640px;margin-bottom:44px}
+.sec-head.center{margin-inline:auto;text-align:center;justify-items:center}
+.eyebrow{font-size:var(--t-xs);font-weight:500;color:var(--gold-ink);letter-spacing:.04em}
 .band .eyebrow{color:var(--gold)}
-.sec{padding-block:clamp(56px,8vw,96px)}
-.sec-head{display:grid;gap:10px;max-width:720px;margin-bottom:36px}
-.sec-head h2{font-size:var(--t-2xl);color:var(--blood)}
-.band .sec-head h2{color:var(--on-band)}
-.sec-head p{color:var(--ink-2);font-size:var(--t-lg);line-height:1.7}
-.band .sec-head p{color:var(--on-band-2)}
+.sec-head h2{font-size:var(--t-2xl);color:var(--ink)}
+.sec-head h2 em{font-style:normal;color:var(--blood)}
+.sec-head p{color:var(--ink-2);font-size:var(--t-lg);font-weight:300}
 
-/* Najdi crenellations (شرفات) */
-.crown{height:14px;background:conic-gradient(from 135deg at 50% 0,var(--c,var(--band)) 90deg,transparent 0) 0 0/28px 14px repeat-x}
+.crown{height:12px;background:conic-gradient(from 135deg at 50% 0,var(--c,var(--band)) 90deg,transparent 0) 0 0/24px 12px repeat-x}
 .crown.up{transform:scaleY(-1)}
 .band{background:var(--band);color:var(--on-band);position:relative}
-.band.deep{background:var(--band-2)}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:12px 22px;font-weight:600;text-decoration:none;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s;white-space:nowrap}
-.btn:active{transform:scale(.97)}
-.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px -12px rgba(20,120,60,.8)}
-.btn-wa:hover{transform:translateY(-2px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:13px 24px;font-weight:500;text-decoration:none;cursor:pointer;transition:transform .2s,background .2s,opacity .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:scale(.98)}
+.btn-wa{background:var(--wa);color:#fff}
 .btn-gold{background:var(--gold);color:#2A1612}
-.btn-gold:hover{transform:translateY(-2px)}
-.btn-ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
-.btn-ghost:hover{background:rgba(127,127,127,.12)}
 .btn-blood{background:var(--blood);color:var(--paper)}
-.btn-sm{padding:8px 14px;font-size:var(--t-sm)}
+.btn-link{background:transparent;color:inherit;padding-inline:6px;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+.btn-sm{padding:9px 16px;font-size:var(--t-sm)}
 
 /* Header */
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--band-2);color:var(--on-band);border-bottom:1px solid rgba(255,255,255,.06)}
-.top .wrap{display:flex;align-items:center;gap:20px;min-height:68px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
-.brand svg{width:40px;height:40px}
-.brand b{font-family:var(--f-display);font-size:1.45rem;font-weight:700;line-height:1}
-.brand small{display:block;font-size:.68rem;color:var(--on-band-2);letter-spacing:.04em;margin-top:3px}
-.nav{display:flex;gap:4px;margin-inline-start:auto}
-.nav a{text-decoration:none;padding:8px 12px;border-radius:999px;font-size:var(--t-sm);color:var(--on-band-2);transition:color .2s,background .2s}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--band-2);color:var(--on-band)}
+.top .wrap{display:flex;align-items:center;gap:24px;min-height:70px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.brand svg{width:38px;height:38px}
+.brand b{font-family:var(--f-display);font-size:1.35rem;font-weight:700;line-height:1}
+.nav{display:flex;gap:6px;margin-inline-start:auto}
+.nav a{text-decoration:none;padding:8px 14px;border-radius:999px;font-size:var(--t-sm);color:var(--on-band-2);transition:color .2s,background .2s}
 .nav a:hover{color:var(--on-band);background:rgba(255,255,255,.07)}
-.top-cta{display:flex;gap:8px;align-items:center}
-.basket-btn{position:relative;background:rgba(255,255,255,.08);color:var(--on-band);border:0;width:44px;height:44px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
-.basket-btn .count{position:absolute;top:-2px;left:-2px;background:var(--gold);color:#2A1612;font-size:.7rem;font-weight:700;min-width:20px;height:20px;border-radius:10px;display:grid;place-items:center;padding:0 5px;font-family:var(--f-num)}
-.menu-btn{display:none;background:transparent;border:0;color:var(--on-band);width:44px;height:44px;font-size:1.3rem;cursor:pointer}
-@media (max-width:980px){
-  .nav{position:fixed;inset:calc(68px + env(safe-area-inset-top,0px)) 0 auto;flex-direction:column;background:var(--band-2);padding:12px max(16px,env(safe-area-inset-right,0px)) 20px max(16px,env(safe-area-inset-left,0px));gap:2px;transform:translateY(-120%);transition:transform .3s;z-index:-1;border-bottom:1px solid rgba(255,255,255,.08)}
+.top-cta{display:flex;gap:10px;align-items:center}
+.basket-btn{position:relative;background:transparent;color:var(--on-band);border:1px solid rgba(255,255,255,.18);width:42px;height:42px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.basket-btn .count{position:absolute;top:-4px;left:-4px;background:var(--gold);color:#2A1612;font-size:.68rem;font-weight:600;min-width:19px;height:19px;border-radius:10px;display:grid;place-items:center;padding:0 5px;font-family:var(--f-num)}
+.basket-btn .count[data-n="0"]{display:none}
+.menu-btn{display:none;background:transparent;border:0;color:var(--on-band);width:42px;height:42px;font-size:1.2rem;cursor:pointer}
+@media (max-width:900px){
+  .nav{position:fixed;inset:calc(70px + env(safe-area-inset-top,0px)) 0 auto;flex-direction:column;background:var(--band-2);padding:10px max(20px,env(safe-area-inset-right,0px)) 22px max(20px,env(safe-area-inset-left,0px));transform:translateY(-130%);transition:transform .3s;z-index:-1}
   .nav.open{transform:none}
-  .nav a{padding:12px 10px;font-size:var(--t-md)}
+  .nav a{padding:12px 6px;font-size:var(--t-md)}
   .menu-btn{display:grid;place-items:center;margin-inline-start:auto}
   .top-cta .btn-wa span{display:none}
-  .top-cta .btn-wa{width:44px;height:44px;padding:0}
+  .top-cta .btn-wa{width:42px;height:42px;padding:0}
 }
 
 /* Hero */
-.hero{overflow:hidden}
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:
-  radial-gradient(60% 80% at 15% 20%,rgba(201,154,58,.16),transparent 60%),
-  radial-gradient(50% 60% at 90% 90%,rgba(0,0,0,.25),transparent 70%)}
-.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-block:56px 72px}
-.hero-copy{display:grid;gap:22px;min-width:0}
-.slogan{font-family:var(--f-display);color:var(--gold);font-size:var(--t-lg);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.slogan i{font-size:.9em}
-.hero h1{font-size:var(--t-3xl);font-weight:700;line-height:1.08;letter-spacing:-.01em}
-.hero h1 em{font-style:normal;color:var(--gold);position:relative;white-space:nowrap}
-.hero h1 em::after{content:"";position:absolute;inset:auto 0 .02em;height:.12em;background:currentColor;opacity:.35;border-radius:4px}
-.hero-lead{font-size:var(--t-lg);color:var(--on-band-2);max-width:56ch;line-height:1.8}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.countdown{display:flex;gap:18px;align-items:center;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.12);padding-top:20px}
-.countdown .lbl{font-size:var(--t-sm);color:var(--on-band-2);max-width:20ch;line-height:1.5}
-.countdown .lbl b{color:var(--on-band);display:block;font-size:var(--t-md)}
-.cd{display:flex;gap:8px;direction:ltr}
-.cd div{background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:8px 10px;text-align:center;min-width:62px}
-.cd b{display:block;font-family:var(--f-num);font-size:1.5rem;line-height:1.1;color:var(--on-band)}
-.cd span{font-size:.7rem;color:var(--on-band-2);direction:rtl;display:block}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;padding-block:72px 96px}
+.hero-copy{display:grid;gap:26px;min-width:0}
+.slogan{color:var(--gold);font-size:var(--t-md);font-weight:500}
+.hero h1{font-size:var(--t-3xl);font-weight:700;line-height:1.2}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero-lead{font-size:var(--t-lg);color:var(--on-band-2);max-width:46ch;font-weight:300}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.opening{font-size:var(--t-sm);color:var(--on-band-2);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.opening b{color:var(--on-band);font-weight:500}
+.opening .num{color:var(--gold);font-size:var(--t-md)}
+.dot-live{width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0}
 
-/* Hanging carcass tag */
-.tag-stage{position:relative;display:grid;justify-items:center;padding-top:34px;min-width:0}
-.hook{position:absolute;top:0;width:3px;height:42px;background:linear-gradient(var(--on-band-2),#9a8a80);border-radius:2px}
-.hook::before{content:"";position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:26px;height:6px;border-radius:3px;background:var(--on-band-2);opacity:.6}
-.tag{position:relative;width:min(100%,360px);background:var(--paper);color:var(--ink);border-radius:18px 18px 14px 14px;padding:30px 24px 22px;box-shadow:0 30px 60px -28px rgba(0,0,0,.7);transform-origin:50% -30px;animation:swing 7s ease-in-out infinite;margin-top:28px}
-.tag::before{content:"";position:absolute;top:12px;left:50%;transform:translateX(-50%);width:16px;height:16px;border-radius:50%;background:var(--band);box-shadow:inset 0 0 0 4px var(--paper-2)}
-@keyframes swing{0%,100%{transform:rotate(1.6deg)}50%{transform:rotate(-1.6deg)}}
-.tag-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px dashed var(--line-2);padding-bottom:12px;margin-bottom:12px;gap:10px}
-.tag-head h3{font-size:1.15rem;color:var(--blood)}
-.tag-head .num{font-size:.85rem;color:var(--ink-2)}
-.tag dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:var(--t-sm)}
-.tag dt{color:var(--ink-2)}
-.tag dd{margin:0;font-weight:600}
-.tag-foot{display:flex;align-items:flex-end;justify-content:space-between;margin-top:16px;gap:12px}
-.qr{width:78px;height:78px;background:#fff;padding:5px;border-radius:6px;flex-shrink:0}
+.tag-stage{position:relative;display:grid;justify-items:center;padding-top:26px;min-width:0}
+.hook{position:absolute;top:0;width:2px;height:40px;background:var(--on-band-2);opacity:.6}
+.tag{position:relative;width:min(100%,340px);background:var(--paper);color:var(--ink);border-radius:18px 18px 14px 14px;padding:30px 24px 22px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);transform-origin:50% -26px;animation:swing 9s ease-in-out infinite;margin-top:24px}
+.tag::before{content:"";position:absolute;top:12px;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:var(--band);box-shadow:inset 0 0 0 4px var(--paper-2)}
+@keyframes swing{0%,100%{transform:rotate(1.2deg)}50%{transform:rotate(-1.2deg)}}
+.tag-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px dashed var(--line-2);padding-bottom:12px;margin-bottom:14px;gap:10px}
+.tag-head h3{font-size:1.05rem;color:var(--blood)}
+.tag-head .num{font-size:.8rem;color:var(--ink-2)}
+.tag dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:7px 16px;font-size:var(--t-sm)}
+.tag dt{color:var(--ink-2);font-weight:300}
+.tag dd{margin:0;font-weight:500}
+.tag-foot{display:flex;align-items:flex-end;justify-content:space-between;margin-top:18px;gap:12px}
+.qr{width:70px;height:70px;background:#fff;padding:5px;border-radius:6px;flex-shrink:0}
 .qr svg{width:100%;height:100%;display:block}
-.tag-foot p{font-size:.72rem;color:var(--ink-2);line-height:1.5}
-.stamp{position:absolute;top:70px;left:16px;width:104px;height:104px;border-radius:50%;border:3px solid var(--stamp);color:var(--stamp);display:grid;place-items:center;text-align:center;transform:rotate(-16deg);opacity:.82;mix-blend-mode:multiply;font-family:var(--f-display);font-size:.78rem;line-height:1.25;padding:10px;
-}
-.stamp::before{content:"";position:absolute;inset:6px;border-radius:50%;border:1.5px dashed var(--stamp)}
-.stamp b{display:block;font-size:1rem;font-family:var(--f-num)}
-:root[data-theme="dark"] .stamp{mix-blend-mode:normal}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .stamp{mix-blend-mode:normal}}
-.tag-note{font-size:.72rem;color:var(--on-band-2);margin-top:14px;text-align:center}
-@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:28px;padding-block:40px 56px}}
+.tag-foot p{font-size:.72rem;color:var(--ink-2);line-height:1.6;font-weight:300}
+.stamp{position:absolute;top:74px;left:18px;width:96px;height:96px;border-radius:50%;border:2.5px solid var(--stamp);color:var(--stamp);display:grid;place-items:center;text-align:center;transform:rotate(-16deg);opacity:.78;font-family:var(--f-display);font-size:.7rem;line-height:1.35;padding:10px}
+.stamp::before{content:"";position:absolute;inset:5px;border-radius:50%;border:1.2px dashed var(--stamp)}
+.stamp b{display:block;font-size:.95rem;font-family:var(--f-num)}
+.tag-note{font-size:.72rem;color:var(--on-band-2);margin-top:16px;opacity:.8}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:36px;padding-block:48px 72px}}
 
-/* Promises */
-.promises{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;margin-top:-28px;position:relative;z-index:2}
-.promise{padding:26px 22px;display:grid;gap:10px;align-content:start;border-inline-start:1px solid var(--line)}
-.promise:first-child{border-inline-start:0}
-.promise .n{font-family:var(--f-num);font-size:var(--t-xs);color:var(--gold-ink)}
-.promise h3{font-size:1.2rem;color:var(--blood);display:flex;gap:10px;align-items:center}
-.promise h3 i{font-size:1rem;opacity:.85}
-.promise p{color:var(--ink-2);font-size:var(--t-sm);line-height:1.7}
-.promise .g{font-size:var(--t-sm);font-weight:600;color:var(--ink);background:var(--paper-2);border-radius:var(--r-sm);padding:8px 10px;line-height:1.5}
-@media (max-width:980px){.promises{grid-template-columns:1fr 1fr}.promise:nth-child(3){border-inline-start:0}.promise:nth-child(n+3){border-top:1px solid var(--line)}}
-@media (max-width:560px){.promises{grid-template-columns:1fr}.promise{border-inline-start:0!important;border-top:1px solid var(--line)}.promise:first-child{border-top:0}}
+/* Promises — open, no boxes */
+.promises{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.promise{display:grid;gap:10px;align-content:start}
+.promise .ic{width:46px;height:46px;border-radius:50%;background:var(--paper);color:var(--blood);display:grid;place-items:center;font-size:1.05rem;box-shadow:var(--shadow)}
+.promise h3{font-size:1.12rem;color:var(--ink);margin-top:6px}
+.promise p{color:var(--ink-2);font-size:var(--t-sm);font-weight:300}
+.promise .g{font-size:var(--t-sm);color:var(--blood);font-weight:500}
+@media (max-width:900px){.promises{grid-template-columns:1fr 1fr;gap:36px 28px}}
+@media (max-width:520px){.promises{grid-template-columns:1fr}}
 
 /* Price board */
-.board-wrap{display:grid;grid-template-columns:1.4fr .6fr;gap:28px;align-items:start}
-.board{background:#140c0a;border-radius:18px;padding:22px clamp(14px,3vw,28px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 30px 50px -30px rgba(0,0,0,.8);color:#F3E7D3;min-width:0}
-.board-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:14px;margin-bottom:6px}
-.board-top h3{font-size:1.2rem;color:#E7C77A}
-.board-date{font-size:var(--t-sm);color:#C9B7A3}
-.live{display:inline-flex;align-items:center;gap:8px;font-size:var(--t-xs);color:#BFE6C8;background:rgba(43,190,101,.12);padding:4px 10px;border-radius:999px}
-.live::before{content:"";width:8px;height:8px;border-radius:50%;background:#2BBE65;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-.prow{display:grid;grid-template-columns:1fr auto auto;gap:6px 16px;align-items:center;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.board{max-width:760px;margin-inline:auto;background:#160e0c;border-radius:20px;padding:26px clamp(18px,4vw,36px);color:#F3E7D3;box-shadow:0 30px 60px -36px rgba(0,0,0,.8)}
+.board-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:4px;border-bottom:1px solid rgba(255,255,255,.08)}
+.board-date{font-size:var(--t-sm);color:#C9B7A3;font-weight:300}
+.live{display:inline-flex;align-items:center;gap:8px;font-size:var(--t-xs);color:#BFE6C8}
+.live::before{content:"";width:7px;height:7px;border-radius:50%;background:#2BBE65}
+.prow{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.06)}
 .prow:last-child{border-bottom:0}
-.prow .pn{font-weight:600;font-size:var(--t-md);min-width:0}
-.prow .pn small{display:block;font-weight:400;font-size:var(--t-xs);color:#B9A592}
-.flaps{display:flex;gap:3px;direction:ltr;align-items:center}
-.flap{width:1.45em;height:1.9em;display:grid;place-items:center;background:linear-gradient(#2a1d19 50%,#231713 50%);border-radius:4px;font-family:var(--f-num);font-weight:600;font-size:1.15rem;color:#F6E7C4;position:relative;box-shadow:inset 0 -1px 0 rgba(0,0,0,.5)}
-.flap::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(0,0,0,.6)}
-.flap.anim{animation:flip .55s cubic-bezier(.3,1.4,.6,1) both}
-@keyframes flip{from{transform:rotateX(-80deg);filter:brightness(1.8)}to{transform:none;filter:none}}
-.flaps .cur{font-size:.78rem;color:#B9A592;margin-left:6px;direction:rtl}
-.flaps .plus{font-family:var(--f-num);color:#E7C77A;font-size:1rem;margin-right:2px}
-.prow .add{justify-self:end}
-@media (max-width:520px){.prow{grid-template-columns:1fr auto}.prow .add{grid-column:1/-1;grid-row:2;justify-self:start}}
-.prow .chip{display:inline-flex;align-items:center;gap:6px;background:rgba(231,199,122,.12);color:#E7C77A;border:0;border-radius:999px;padding:4px 12px;font-size:var(--t-xs);cursor:pointer}
-.prow .chip:hover{background:rgba(231,199,122,.22)}
-.board-note{font-size:var(--t-xs);color:#A9968A;margin-top:12px;line-height:1.6}
-.board-side{display:grid;gap:16px}
-.side-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;display:grid;gap:10px}
-.side-card h4{font-size:1.05rem;color:var(--gold)}
-.side-card p{color:var(--on-band-2);font-size:var(--t-sm);line-height:1.7}
-.side-card ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:var(--t-sm);color:var(--on-band-2)}
-.side-card li{display:flex;gap:10px;align-items:baseline}
-.side-card li i{color:var(--gold);font-size:.8rem}
-@media (max-width:900px){.board-wrap{grid-template-columns:1fr}}
-
-/* Cards common */
-.card{background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);min-width:0}
+.prow .pn{min-width:0}
+.prow .pn b{font-weight:500;display:block}
+.prow .pn small{display:block;font-size:var(--t-xs);color:#A9968A;font-weight:300}
+.flaps{display:flex;gap:3px;direction:ltr;align-items:center;flex-shrink:0}
+.flap{width:1.35em;height:1.8em;display:grid;place-items:center;background:linear-gradient(#2a1d19 50%,#231713 50%);border-radius:4px;font-family:var(--f-num);font-size:1.08rem;color:#F6E7C4;position:relative}
+.flap::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(0,0,0,.55)}
+.flap.anim{animation:flip .5s cubic-bezier(.3,1.3,.6,1) both}
+@keyframes flip{from{transform:rotateX(-80deg)}to{transform:none}}
+.flaps .cur{font-size:.74rem;color:#A9968A;margin-left:8px;direction:rtl;font-family:var(--f-body)}
+.flaps .plus{font-family:var(--f-num);color:#E7C77A;margin-right:2px}
+.board-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08)}
+.board-foot p{font-size:var(--t-xs);color:#A9968A;max-width:44ch;font-weight:300}
 
 /* Dish picker */
-.dish-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:start}
-.dishes{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
-.dish{appearance:none;border:1.5px solid var(--line-2);background:var(--paper);border-radius:12px;padding:14px 14px 12px;text-align:right;cursor:pointer;display:grid;gap:2px;transition:border-color .2s,transform .2s,background .2s;min-width:0}
-.dish:hover{border-color:var(--blood);transform:translateY(-2px)}
-.dish b{font-family:var(--f-display);font-size:1.3rem;font-weight:600;color:var(--ink)}
-.dish span{font-size:var(--t-xs);color:var(--ink-2);line-height:1.5}
-.dish[aria-pressed="true"]{background:var(--blood);border-color:var(--blood)}
-.dish[aria-pressed="true"] b{color:var(--paper)}
-.dish[aria-pressed="true"] span{color:var(--paper);opacity:.85}
-.recipe{padding:26px;display:grid;gap:18px;position:sticky;top:96px}
-.recipe-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
-.recipe-head h3{font-size:var(--t-xl);color:var(--blood)}
-.recipe-head .tagline{font-size:var(--t-sm);color:var(--ink-2)}
+.dish-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:start}
+.dishes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.dish{appearance:none;border:1px solid var(--line-2);background:transparent;border-radius:12px;padding:16px;text-align:right;cursor:pointer;display:grid;gap:2px;transition:border-color .2s,background .2s;min-width:0}
+.dish:hover{border-color:var(--blood);background:var(--paper)}
+.dish b{font-family:var(--f-display);font-size:1.15rem;font-weight:600}
+.dish span{font-size:var(--t-xs);color:var(--ink-2);font-weight:300}
+.dish[aria-pressed="true"]{background:var(--blood);border-color:var(--blood);color:var(--paper)}
+.dish[aria-pressed="true"] span{color:var(--paper);opacity:.8}
+.recipe{background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);padding:28px;display:grid;gap:20px;position:sticky;top:96px;min-width:0}
+.recipe h3{font-size:var(--t-xl);color:var(--blood)}
 .ctrl{display:grid;gap:8px}
-.ctrl > label,.ctrl > .lbl{font-size:var(--t-sm);font-weight:600;color:var(--ink-2)}
-.stepper{display:inline-flex;align-items:center;border:1.5px solid var(--line-2);border-radius:999px;overflow:hidden;width:max-content}
-.stepper button{width:42px;height:40px;border:0;background:transparent;cursor:pointer;font-size:1rem}
+.ctrl .lbl{font-size:var(--t-xs);color:var(--ink-2)}
+.ctrls{display:flex;gap:20px;flex-wrap:wrap;align-items:end}
+.stepper{display:inline-flex;align-items:center;border:1px solid var(--line-2);border-radius:999px;overflow:hidden}
+.stepper button{width:40px;height:38px;border:0;background:transparent;cursor:pointer;font-size:1.1rem}
 .stepper button:hover{background:var(--paper-2)}
-.stepper output{min-width:64px;text-align:center;font-family:var(--f-num);font-weight:600;font-size:1.1rem}
+.stepper output{min-width:44px;text-align:center;font-family:var(--f-num)}
 .seg{display:flex;flex-wrap:wrap;gap:6px}
-.seg button{border:1.5px solid var(--line-2);background:transparent;border-radius:999px;padding:6px 14px;cursor:pointer;font-size:var(--t-sm)}
+.seg button{border:1px solid var(--line-2);background:transparent;border-radius:999px;padding:6px 14px;cursor:pointer;font-size:var(--t-sm)}
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.cuts{margin:0;padding:0;list-style:none;display:grid;gap:8px}
-.cuts li{display:flex;gap:10px;align-items:baseline;font-size:var(--t-sm);line-height:1.6}
-.cuts li::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;margin-top:2px}
-.tip{background:var(--paper-2);border-radius:var(--r-sm);padding:12px 14px;font-size:var(--t-sm);display:flex;gap:10px;line-height:1.6}
-.tip i{color:var(--gold-ink);margin-top:4px}
-.total{display:flex;justify-content:space-between;align-items:flex-end;border-top:2px dashed var(--line-2);padding-top:16px;gap:12px;flex-wrap:wrap}
-.total .k{font-size:var(--t-sm);color:var(--ink-2)}
-.total .v{font-family:var(--f-num);font-size:1.7rem;font-weight:600;color:var(--ink);line-height:1.1}
-.total .v small{font-family:var(--f-body);font-size:.8rem;color:var(--ink-2);font-weight:400}
+.cuts{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:var(--t-sm)}
+.cuts li{display:flex;gap:10px;align-items:baseline}
+.cuts li::before{content:"";width:6px;height:6px;border-radius:1px;background:var(--gold);transform:rotate(45deg);flex-shrink:0}
+.tip{font-size:var(--t-sm);color:var(--ink-2);font-weight:300;border-inline-start:2px solid var(--gold);padding-inline-start:12px}
+.total{display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--line);padding-top:18px;gap:12px;flex-wrap:wrap}
+.total .k{font-size:var(--t-xs);color:var(--ink-2)}
+.total .v{font-family:var(--f-num);font-size:1.6rem;line-height:1.2}
+.total .v small{font-family:var(--f-body);font-size:.78rem;color:var(--ink-2)}
 @media (max-width:900px){.dish-layout{grid-template-columns:1fr}.recipe{position:static}}
+@media (max-width:480px){.dishes{grid-template-columns:1fr 1fr}}
 
-/* Scale / weight simulator */
-.scale-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
-.scale-ctrl{padding:26px;display:grid;gap:20px;align-content:start}
-.scale-ctrl select,.field input,.field select,.field textarea{width:100%;border:1.5px solid var(--line-2);background:var(--paper);border-radius:10px;padding:10px 12px}
+/* Weight */
+.scale-layout{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.scale-ctrl{display:grid;gap:24px}
+.scale-ctrl select{width:100%;border:1px solid var(--line-2);background:var(--paper);border-radius:10px;padding:11px 12px}
+.scale-ctrl label{font-size:var(--t-sm);color:var(--ink-2)}
+.scale-ctrl label b{color:var(--ink);font-weight:500}
 input[type=range]{width:100%;accent-color:var(--blood)}
-.range-row{display:flex;justify-content:space-between;font-size:var(--t-xs);color:var(--ink-2);font-family:var(--f-num)}
-.verdict{border-radius:12px;padding:14px 16px;font-size:var(--t-sm);display:flex;gap:12px;align-items:flex-start;line-height:1.65}
-.verdict.ok{background:color-mix(in srgb,var(--ok) 14%,transparent);color:var(--ink)}
-.verdict.short{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--ink)}
-.verdict i{margin-top:4px}
+.range-row{display:flex;justify-content:space-between;font-size:.72rem;color:var(--ink-2)}
+.verdict{font-size:var(--t-sm);display:flex;gap:12px;align-items:baseline;padding-top:4px}
 .verdict.ok i{color:var(--ok)}
 .verdict.short i{color:var(--warn)}
-.phone{background:#0B141A;border-radius:28px;padding:14px;box-shadow:var(--shadow);display:grid;grid-template-rows:auto 1fr;min-height:420px;min-width:0}
-.phone-bar{display:flex;align-items:center;gap:10px;padding:8px 10px 12px;color:#E9EDEF;border-bottom:1px solid rgba(255,255,255,.08)}
-.phone-bar .av{width:34px;height:34px;border-radius:50%;background:var(--blood);display:grid;place-items:center;color:#F6EEE1;font-family:var(--f-display);font-size:.9rem}
-.phone-bar b{font-size:var(--t-sm);display:block;line-height:1.2}
-.phone-bar small{font-size:.7rem;color:#8696A0}
-.chat{padding:14px 6px;display:grid;gap:10px;align-content:start;background:
-  radial-gradient(circle at 20% 20%,rgba(255,255,255,.02) 1px,transparent 1px) 0 0/16px 16px}
-.bubble{background:#1F2C34;color:#E9EDEF;border-radius:12px 12px 12px 4px;padding:10px 12px;max-width:92%;font-size:var(--t-sm);line-height:1.6;justify-self:end}
+.phone{background:#0B141A;border-radius:28px;padding:12px;box-shadow:var(--shadow);max-width:400px;justify-self:center;width:100%;min-width:0}
+.phone-bar{display:flex;align-items:center;gap:10px;padding:8px 10px 12px;color:#E9EDEF;border-bottom:1px solid rgba(255,255,255,.07)}
+.phone-bar .av{width:32px;height:32px;border-radius:50%;background:var(--blood);display:grid;place-items:center;color:#F6EEE1;font-family:var(--f-display);font-size:.8rem}
+.phone-bar b{font-size:var(--t-sm);display:block;line-height:1.2;font-weight:500}
+.phone-bar small{font-size:.68rem;color:#8696A0}
+.chat{padding:14px 6px 6px;display:grid;gap:10px;align-content:start;min-height:330px}
+.bubble{background:#1F2C34;color:#E9EDEF;border-radius:12px 12px 12px 4px;padding:10px 12px;max-width:92%;font-size:.86rem;line-height:1.65;justify-self:end}
 .bubble.me{background:#005C4B;border-radius:12px 12px 4px 12px;justify-self:start}
-.bubble .rc{display:grid;grid-template-columns:1fr auto;gap:2px 14px;margin-top:6px;font-size:.82rem}
-.bubble .rc span:nth-child(even){font-family:var(--f-num);text-align:left;direction:ltr}
-.bubble .rc .sum{border-top:1px dashed rgba(255,255,255,.25);padding-top:4px;margin-top:2px;font-weight:600}
-.bubble time{display:block;text-align:left;font-size:.66rem;color:#8696A0;margin-top:4px;font-family:var(--f-num)}
+.bubble .rc{display:grid;grid-template-columns:1fr auto;gap:2px 14px;margin-top:6px;font-size:.8rem}
+.bubble .rc span:nth-child(even){font-family:var(--f-num);direction:ltr;text-align:left}
+.bubble .rc .sum{border-top:1px dashed rgba(255,255,255,.22);padding-top:4px;margin-top:2px;font-weight:500}
+.bubble time{display:block;text-align:left;font-size:.64rem;color:#8696A0;margin-top:2px;font-family:var(--f-num)}
 @media (max-width:860px){.scale-layout{grid-template-columns:1fr}}
 
 /* Programs */
-.programs{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
-.prog{padding:24px;display:grid;gap:12px;align-content:start;grid-column:span 2;position:relative}
-.prog.wide{grid-column:span 3}
-.prog .kicker{font-size:var(--t-xs);color:var(--gold-ink);font-weight:600;display:flex;gap:8px;align-items:center}
-.prog h3{font-size:1.45rem;color:var(--blood)}
-.prog p{color:var(--ink-2);font-size:var(--t-sm);line-height:1.75}
-.prog .meta{display:flex;flex-wrap:wrap;gap:6px}
-.pill{font-size:.72rem;border:1px solid var(--line-2);border-radius:999px;padding:3px 10px;color:var(--ink-2)}
-.pill.on{background:var(--ok);color:#fff;border-color:transparent}
-.pill.soon{background:var(--gold);color:#2A1612;border-color:transparent}
-.calc{background:var(--paper-2);border-radius:12px;padding:16px;display:grid;gap:12px}
-.calc-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:var(--t-sm)}
-.calc-row b{font-family:var(--f-num);font-size:1.15rem}
-.calc-row.big b{font-size:1.6rem;color:var(--blood)}
-@media (max-width:980px){.programs{grid-template-columns:1fr 1fr}.prog,.prog.wide{grid-column:span 1}}
-@media (max-width:620px){.programs{grid-template-columns:1fr}}
+.programs{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.prog{background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);padding:28px;display:grid;gap:12px;align-content:start;min-width:0}
+.prog .kicker{font-size:var(--t-xs);color:var(--gold-ink)}
+.prog h3{font-size:1.35rem;color:var(--blood)}
+.prog p{color:var(--ink-2);font-size:var(--t-sm);font-weight:300}
+.calc{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px;margin-top:4px}
+.calc .res{font-size:var(--t-sm);color:var(--ink-2)}
+.calc .res b{font-family:var(--f-num);font-size:1.3rem;color:var(--ink);font-weight:500}
+.prog .foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:4px}
+.pill{font-size:.74rem;border-radius:999px;padding:3px 12px;background:var(--paper-2);color:var(--ink-2)}
+.pill.on{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+.more{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:var(--t-sm);color:var(--ink-2);justify-content:center}
+.more span{display:inline-flex;gap:8px;align-items:center}
+.more b{color:var(--ink);font-weight:500}
+@media (max-width:760px){.programs{grid-template-columns:1fr}}
 
 /* Delivery */
-.deliv{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:center}
-.map{background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);padding:16px;min-width:0}
-.map svg{width:100%;height:auto;display:block}
-.map figcaption{font-size:var(--t-xs);color:var(--ink-2);text-align:center;margin-top:6px}
-.facts{display:grid;gap:14px}
-.fact{display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:start}
-.fact .ic{width:56px;height:56px;border-radius:14px;background:var(--band);color:var(--gold);display:grid;place-items:center;font-size:1.3rem}
-.fact h4{font-size:1.15rem;color:var(--ink)}
-.fact p{color:var(--ink-2);font-size:var(--t-sm)}
-@media (max-width:860px){.deliv{grid-template-columns:1fr}}
+.deliv{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.map{margin:0;min-width:0}
+.map svg{width:100%;height:auto;display:block;border-radius:var(--r)}
+.map figcaption{font-size:.72rem;color:var(--ink-2);text-align:center;margin-top:8px}
+.facts{display:grid;gap:22px;margin-top:8px}
+.fact{display:grid;grid-template-columns:22px 1fr;gap:14px;align-items:baseline}
+.fact i{color:var(--blood)}
+.fact h4{font-size:1.02rem;font-family:var(--f-body);font-weight:500}
+.fact p{color:var(--ink-2);font-size:var(--t-sm);font-weight:300}
+@media (max-width:860px){.deliv{grid-template-columns:1fr;gap:32px}}
 
 /* Story */
-.story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center}
-.story blockquote{margin:0;font-family:var(--f-display);font-size:clamp(1.6rem,3.6vw,2.5rem);line-height:1.45;color:var(--on-band)}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,80px);align-items:center;padding-block:clamp(72px,10vw,112px)}
+.story blockquote{margin:0;font-family:var(--f-display);font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.45;font-weight:600}
 .story blockquote span{color:var(--gold)}
-.story .body{display:grid;gap:16px;color:var(--on-band-2);font-size:var(--t-md);line-height:1.9;min-width:0}
-.series{display:grid;gap:10px;margin-top:6px}
-.series div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:10px;font-size:var(--t-sm)}
-.series b{color:var(--on-band);font-weight:600}
-.series span{color:var(--on-band-2);text-align:left;flex-shrink:0}
+.story .body{display:grid;gap:14px;color:var(--on-band-2);font-weight:300;min-width:0;max-width:52ch}
 @media (max-width:860px){.story{grid-template-columns:1fr}}
 
-/* Road to opening */
-.road{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:st;position:relative}
-.stage{padding:0 12px 0 0;position:relative;display:grid;gap:8px;align-content:start}
-.stage::before{content:"";position:absolute;top:13px;right:0;left:0;height:2px;background:var(--line-2)}
-.stage .dot{width:28px;height:28px;border-radius:50%;background:var(--paper);border:2px solid var(--line-2);position:relative;z-index:1;display:grid;place-items:center;font-family:var(--f-num);font-size:.75rem}
-.stage.now .dot{background:var(--blood);border-color:var(--blood);color:var(--paper);box-shadow:0 0 0 6px color-mix(in srgb,var(--blood) 22%,transparent)}
-.stage h4{font-size:1.05rem;color:var(--ink);margin-top:6px}
-.stage time{font-size:var(--t-xs);color:var(--gold-ink);font-weight:600}
-.stage p{font-size:var(--t-sm);color:var(--ink-2);line-height:1.65;padding-left:12px}
-@media (max-width:900px){.road{grid-template-columns:1fr;gap:18px}.stage{padding:0 40px 0 0}.stage::before{top:0;bottom:-18px;right:13px;left:auto;width:2px;height:auto}.stage:last-child::before{display:none}.stage .dot{position:absolute;right:0;top:0}.stage h4{margin-top:0}}
-
-/* Founders form */
-.founders{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
-.perks{display:grid;gap:12px;margin:0;padding:0;list-style:none}
-.perks li{display:flex;gap:12px;align-items:baseline;color:var(--on-band-2)}
-.perks li b{color:var(--on-band)}
-.perks i{color:var(--gold)}
-.form{padding:26px;display:grid;gap:14px;color:var(--ink)}
-.field{display:grid;gap:6px}
-.field label{font-size:var(--t-sm);font-weight:600;color:var(--ink-2)}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.form .fine{font-size:var(--t-xs);color:var(--ink-2)}
-.wall{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
-.wall span{font-size:.72rem;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,.07);color:var(--on-band-2);border:1px dashed rgba(255,255,255,.18)}
-@media (max-width:860px){.founders{grid-template-columns:1fr}}
+/* Founders */
+.founders{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.perks{display:grid;gap:16px;margin:0;padding:0;list-style:none}
+.perks li{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:baseline;color:var(--ink-2);font-weight:300}
+.perks li b{color:var(--ink);font-weight:500}
+.perks i{color:var(--gold-ink)}
+.form{background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);padding:28px;display:grid;gap:16px}
+.field{display:grid;gap:6px;min-width:0}
+.field label{font-size:var(--t-xs);color:var(--ink-2)}
+.field input,.field select,.field textarea{width:100%;border:1px solid var(--line-2);background:var(--mud);border-radius:10px;padding:11px 12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fine{font-size:var(--t-xs);color:var(--ink-2);font-weight:300}
+@media (max-width:860px){.founders{grid-template-columns:1fr;gap:32px}}
 @media (max-width:460px){.row2{grid-template-columns:1fr}}
 
 /* FAQ */
-.faq{display:grid;gap:10px;max-width:860px}
-.faq details{background:var(--paper);border-radius:12px;box-shadow:var(--shadow);padding:0 20px}
-.faq summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:600;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq{display:grid;max-width:760px;margin-inline:auto;border-top:1px solid var(--line-2)}
+.faq details{border-bottom:1px solid var(--line-2)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:500;display:flex;justify-content:space-between;gap:16px;align-items:center}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--f-num);font-size:1.3rem;color:var(--blood);transition:transform .25s}
+.faq summary::after{content:"+";font-family:var(--f-num);font-size:1.2rem;color:var(--blood);transition:transform .25s}
 .faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{padding-bottom:18px;color:var(--ink-2);font-size:var(--t-sm);line-height:1.85}
+.faq details p{padding-bottom:20px;color:var(--ink-2);font-size:var(--t-sm);font-weight:300;max-width:62ch}
 
 /* Footer */
-footer{background:var(--band-2);color:var(--on-band-2);font-size:var(--t-sm)}
-footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px;padding-block:44px}
-footer h4{color:var(--on-band);font-size:1rem;margin-bottom:10px}
+footer{background:var(--band-2);color:var(--on-band-2);font-size:var(--t-sm);font-weight:300}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;padding-block:52px 40px}
+footer h4{color:var(--on-band);font-size:.95rem;margin-bottom:10px;font-family:var(--f-body);font-weight:500}
 footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
-footer .legal{border-top:1px solid rgba(255,255,255,.08);padding-block:18px;font-size:var(--t-xs);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.copy{background:transparent;border:1px solid rgba(255,255,255,.2);color:var(--on-band);border-radius:6px;padding:2px 8px;font-size:.72rem;cursor:pointer;margin-inline-start:6px}
+footer .legal{border-top:1px solid rgba(255,255,255,.07);padding-block:18px;font-size:.74rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.copy{background:transparent;border:1px solid rgba(255,255,255,.2);color:var(--on-band);border-radius:6px;padding:1px 8px;font-size:.7rem;cursor:pointer;margin-inline-start:6px}
 @media (max-width:760px){footer .wrap{grid-template-columns:1fr}}
 
-/* Floating WA + basket drawer */
-.fab{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:calc(20px + env(safe-area-inset-left,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;font-size:1.7rem;box-shadow:0 14px 28px -12px rgba(0,0,0,.6);text-decoration:none;transition:transform .2s}
-.fab:hover{transform:scale(1.07)}
-.scrim{position:fixed;inset:0;background:rgba(10,5,4,.55);z-index:70;opacity:0;pointer-events:none;transition:opacity .3s}
+/* FAB + drawer */
+.fab{position:fixed;bottom:calc(22px + env(safe-area-inset-bottom,0px));left:calc(22px + env(safe-area-inset-left,0px));z-index:40;width:54px;height:54px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;font-size:1.55rem;box-shadow:0 12px 26px -12px rgba(0,0,0,.55);text-decoration:none}
+.scrim{position:fixed;inset:0;background:rgba(10,5,4,.5);z-index:70;opacity:0;pointer-events:none;transition:opacity .3s}
 .scrim.open{opacity:1;pointer-events:auto}
-.drawer{position:fixed;top:0;bottom:0;left:0;width:min(440px,100%);z-index:80;background:var(--paper);color:var(--ink);transform:translateX(-105%);transition:transform .35s cubic-bezier(.2,.8,.2,1);display:grid;grid-template-rows:auto 1fr auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);box-shadow:20px 0 50px -20px rgba(0,0,0,.5)}
+.drawer{position:fixed;top:0;bottom:0;left:0;width:min(420px,100%);z-index:80;background:var(--paper);color:var(--ink);transform:translateX(-105%);transition:transform .35s cubic-bezier(.2,.8,.2,1);display:grid;grid-template-rows:auto 1fr auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px)}
 .drawer.open{transform:none}
-.drawer-head{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid var(--line)}
-.drawer-head h3{font-size:1.3rem;color:var(--blood)}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line)}
+.drawer-head h3{font-size:1.2rem;color:var(--blood)}
 .x{background:transparent;border:0;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1.1rem}
 .x:hover{background:var(--paper-2)}
-.drawer-body{overflow:auto;padding:16px 20px;display:grid;gap:14px;align-content:start}
-.line{display:grid;grid-template-columns:1fr auto auto;gap:4px 12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
-.line b{font-weight:600;font-size:var(--t-sm)}
-.line small{grid-column:1/2;color:var(--ink-2);font-size:var(--t-xs);line-height:1.5}
-.line .num{font-weight:600}
+.drawer-body{overflow:auto;padding:12px 22px;display:grid;gap:16px;align-content:start}
+.line{display:grid;grid-template-columns:1fr auto auto;gap:2px 12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.line b{font-weight:500;font-size:var(--t-sm)}
+.line small{color:var(--ink-2);font-size:var(--t-xs);font-weight:300}
 .line .rm{background:transparent;border:0;color:var(--ink-2);cursor:pointer;width:32px;height:32px;border-radius:50%}
-.line .rm:hover{background:var(--paper-2);color:var(--warn)}
-.empty{text-align:center;color:var(--ink-2);padding:30px 10px;display:grid;gap:10px;justify-items:center}
-.empty i{font-size:2rem;color:var(--line-2)}
-.drawer-foot{padding:16px 20px;border-top:1px solid var(--line);display:grid;gap:12px}
+.line .rm:hover{color:var(--warn)}
+.empty{text-align:center;color:var(--ink-2);padding:32px 10px;display:grid;gap:12px;justify-items:center;font-weight:300}
+.drawer-foot{padding:16px 22px;border-top:1px solid var(--line);display:grid;gap:12px}
 .drawer-foot .total{border:0;padding:0}
-.toast{position:fixed;bottom:calc(92px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,20px);background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:999px;font-size:var(--t-sm);z-index:90;opacity:0;transition:.3s;pointer-events:none;display:flex;gap:8px;align-items:center;max-width:calc(100% - 32px)}
+.toast{position:fixed;bottom:calc(92px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,16px);background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:999px;font-size:var(--t-sm);z-index:90;opacity:0;transition:.3s;pointer-events:none;max-width:calc(100% - 40px)}
 .toast.show{opacity:1;transform:translate(-50%,0)}
+.sample{display:inline-block;font-size:.66rem;padding:1px 8px;border-radius:4px;background:color-mix(in srgb,var(--stamp) 14%,transparent);color:var(--stamp);vertical-align:middle}
+.band .sample,.board .sample{background:rgba(255,255,255,.08);color:#C9B7A3}
 
-.sample{display:inline-block;font-size:.68rem;font-weight:600;padding:2px 8px;border-radius:4px;background:color-mix(in srgb,var(--stamp) 16%,transparent);color:var(--stamp);vertical-align:middle;letter-spacing:.02em}
-.band .sample{background:rgba(255,255,255,.1);color:var(--on-band-2)}
-
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  html{scroll-behavior:auto}
-}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 </style>
 
 <div id="app" dir="rtl" lang="ar">
 
-<!-- ============ Header ============ -->
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#home" aria-label="خان جليلة — الرئيسية">
       <svg viewBox="0 0 48 48" aria-hidden="true">
         <path d="M4 12 L8 6 L12 12 L16 6 L20 12 L24 6 L28 12 L32 6 L36 12 L40 6 L44 12 Z" fill="#C99A3A"/>
         <rect x="4" y="12" width="40" height="32" rx="2" fill="#C99A3A"/>
-        <path d="M15 44 V28 a9 9 0 0 1 18 0 V44 Z" fill="#4A0D14"/>
-        <path d="M20 22 l4 -5 4 5 z" fill="#4A0D14"/>
-        <rect x="22.6" y="31" width="2.8" height="9" rx="1" fill="#C99A3A"/>
-        <path d="M18 34 h12" stroke="#C99A3A" stroke-width="2" stroke-linecap="round"/>
+        <path d="M15 44 V28 a9 9 0 0 1 18 0 V44 Z" fill="#430C13"/>
+        <path d="M20 22 l4 -5 4 5 z" fill="#430C13"/>
       </svg>
-      <span><b>خان جليلة</b><small>ملحمة الحي الشفافة · المنصورة</small></span>
+      <b>خان جليلة</b>
     </a>
     <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false" aria-controls="nav"><i class="fa-solid fa-bars"></i></button>
     <nav class="nav" id="nav">
-      <a href="#prices">سعر الفجر</a>
+      <a href="#prices">سعر اليوم</a>
       <a href="#dishes">اختر طبختك</a>
-      <a href="#weight">الوزن وزنك</a>
       <a href="#programs">برامجنا</a>
-      <a href="#delivery">التوصيل</a>
       <a href="#founders">المؤسسون</a>
     </nav>
     <div class="top-cta">
-      <button class="basket-btn" id="basketBtn" aria-label="سلة الطلب"><i class="fa-solid fa-bag-shopping"></i><span class="count" id="basketCount">0</span></button>
+      <button class="basket-btn" id="basketBtn" aria-label="سلة الطلب"><i class="fa-solid fa-bag-shopping"></i><span class="count" id="basketCount" data-n="0">0</span></button>
       <a class="btn btn-wa btn-sm" data-wa="مرحباً خان جليلة، أبغى أطلب." href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>اطلب الآن</span></a>
     </div>
   </div>
 </header>
 
-<!-- ============ Hero ============ -->
+<!-- Hero -->
 <section class="band hero" id="home">
   <div class="wrap">
     <div class="hero-copy">
-      <div class="slogan"><i class="fa-solid fa-scale-balanced"></i> الوزن وزنك.. والسعر قدّامك</div>
+      <p class="slogan">الوزن وزنك.. والسعر قدّامك</p>
       <h1>لحمٌ <em>تعرف قصته</em></h1>
-      <p class="hero-lead">الملحمة الوحيدة في شارع اللحوم بحي المنصورة التي تريك هوية ذبيحتك، ووزنها الحقيقي، وسعر يومها قبل أن تدفع، وتوصلها لبيتك خلال ساعة.</p>
+      <p class="hero-lead">نريك هوية ذبيحتك، ووزنها الحقيقي، وسعر يومها قبل أن تدفع. ونوصلها لبيتك خلال ساعة.</p>
       <div class="hero-actions">
-        <a class="btn btn-gold" href="#founders"><i class="fa-solid fa-crown"></i> سجّل مؤسساً وخذ أول كيلو مفروم علينا</a>
-        <a class="btn btn-ghost" href="#dishes">وش نطبخ اليوم؟</a>
+        <a class="btn btn-gold" href="#founders">سجّل مؤسساً</a>
+        <a class="btn btn-link" href="#dishes">وش نطبخ اليوم؟</a>
       </div>
-      <div class="countdown" aria-live="polite">
-        <p class="lbl"><b>نفتح أبوابنا ٢٤ يناير ٢٠٢٧</b>قبل رمضان بأسبوعين، الساعة ٧ صباحاً</p>
-        <div class="cd" id="cd">
-          <div><b id="cdD">--</b><span>يوم</span></div>
-          <div><b id="cdH">--</b><span>ساعة</span></div>
-          <div><b id="cdM">--</b><span>دقيقة</span></div>
-          <div><b id="cdS">--</b><span>ثانية</span></div>
-        </div>
-      </div>
+      <p class="opening"><span class="dot-live"></span><b>نفتح ٢٤ يناير ٢٠٢٧</b> · باقي <span class="num" id="cdD">--</span> يوماً</p>
     </div>
 
     <div class="tag-stage" aria-label="بطاقة هوية الذبيحة">
       <span class="hook" aria-hidden="true"></span>
       <article class="tag">
-        <div class="stamp" aria-hidden="true"><div>مسلخ معتمد<b id="stampTime">05:40</b>فحص بيطري</div></div>
-        <div class="tag-head">
-          <h3>هوية الذبيحة</h3>
-          <span class="num">No. <span id="tagNo">0417</span></span>
-        </div>
+        <div class="stamp" aria-hidden="true"><div>مسلخ معتمد<b>05:40</b>فحص بيطري</div></div>
+        <div class="tag-head"><h3>هوية الذبيحة</h3><span class="num">No. 0417</span></div>
         <dl>
           <dt>السلالة</dt><dd>نعيمي</dd>
           <dt>المنشأ</dt><dd>بلدي · سعودي</dd>
-          <dt>العمر</dt><dd>هرفي (٦–٨ أشهر)</dd>
           <dt>المسلخ</dt><dd>مسلخ معتمد · الرياض</dd>
-          <dt>ساعة الذبح</dt><dd class="num" id="tagTime">—</dd>
-          <dt>الوزن الحي</dt><dd class="num">48.0 كجم</dd>
+          <dt>ساعة الذبح</dt><dd class="num" id="tagTime">05:40</dd>
           <dt>وزن الذبيحة</dt><dd class="num">22.8 كجم</dd>
         </dl>
         <div class="tag-foot">
-          <p>امسح الرمز لترى صورة ختم المسلخ وفيديو وصول الذبيحة صباح اليوم.</p>
+          <p>امسح الرمز لترى ختم المسلخ وفيديو وصول الذبيحة.</p>
           <div class="qr" id="qr" aria-hidden="true"></div>
         </div>
       </article>
-      <p class="tag-note"><span class="sample">بطاقة نموذجية</span> كل ذبيحة معلّقة في المحل تحمل بطاقة مثلها.</p>
+      <p class="tag-note"><span class="sample">نموذج</span> على كل ذبيحة في المحل بطاقة مثلها</p>
     </div>
   </div>
   <div class="crown up" style="--c:var(--mud);position:absolute;bottom:0;left:0;right:0"></div>
 </section>
 
-<!-- ============ Promises ============ -->
-<div class="wrap">
-  <div class="promises" role="list">
-    <div class="promise" role="listitem">
-      <span class="n">الوعد ١</span>
-      <h3><i class="fa-solid fa-id-card"></i> هوية الذبيحة</h3>
-      <p>بطاقة على كل ذبيحة: السلالة، بلد المنشأ، المسلخ، ساعة الذبح والوزن، ورمز يفتح صورة الختم.</p>
-    </div>
-    <div class="promise" role="listitem">
-      <span class="n">الوعد ٢</span>
-      <h3><i class="fa-solid fa-scale-balanced"></i> الوزن الصافي مضمون</h3>
-      <p>إيصال واتساب بالوزن قبل التنظيف وبعده، وميزان مراجعة معتمد عند الباب.</p>
-      <span class="g">نقص جرامات؟ نعوّض ضعفها فوراً.</span>
-    </div>
-    <div class="promise" role="listitem">
-      <span class="n">الوعد ٣</span>
-      <h3><i class="fa-solid fa-sun"></i> سعر اليوم معلن</h3>
-      <p>لوحة أسعار تُنشر الساعة ٧ صباحاً على واتساب وسناب ولوحة المحل.</p>
-      <span class="g">لا سعر خاص لعميل دون آخر، ولا مفاجآت في الفاتورة.</span>
-    </div>
-    <div class="promise" role="listitem">
-      <span class="n">الوعد ٤</span>
-      <h3><i class="fa-solid fa-clock"></i> موعدك محفوظ</h3>
-      <p>توصيل داخل ٣ كم خلال ساعة، وحجوزات العيد والمناسبات بساعة محددة.</p>
-      <span class="g">تأخرنا؟ التوصيل علينا وهدية في طلبك القادم.</span>
-    </div>
-  </div>
-</div>
-
-<!-- ============ Price board ============ -->
-<section class="sec" id="prices">
+<!-- Promises -->
+<section class="sec" id="promise">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">لوحة سعر الفجر</span>
-      <h2>سعر اليوم، للجميع، قبل أن تسأل</h2>
-      <p>السعر مرتبط بسعر الشراء اليومي من سوق العزيزية، ويُعلن كل صباح. الكل يرى نفس الرقم، في المحل وعلى الجوال.</p>
+      <span class="eyebrow">أربعة وعود</span>
+      <h2>اللي يفقده العميل في سوق اللحم <em>هو اليقين</em></h2>
     </div>
-    <div class="board-wrap">
-      <div class="board">
-        <div class="board-top">
-          <div>
-            <h3>أسعار اليوم · شاملة الضريبة</h3>
-            <div class="board-date" id="boardDate">—</div>
-          </div>
-          <span class="live">نُشرت ٧:٠٠ ص</span>
-        </div>
-        <div id="board"></div>
-        <p class="board-note"><span class="sample">أسعار استرشادية</span> هذه أسعار نموذجية من سلّم التسعير المعتمد في دراسة المشروع، وتُستبدل بأسعار الشراء الفعلية كل صباح بعد الافتتاح.</p>
-      </div>
-      <aside class="board-side">
-        <div class="side-card" style="background:var(--band);color:var(--on-band)">
-          <h4><i class="fa-solid fa-bell"></i> وصلك السعر قبل الفطور</h4>
-          <p>انضم لقناة الأسعار على واتساب، وتوصلك لوحة الفجر كل يوم الساعة ٧.</p>
-          <a class="btn btn-wa btn-sm" data-wa="أبغى أشترك في قناة أسعار الفجر" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> اشترك في قناة الأسعار</a>
-        </div>
-        <div class="side-card" style="background:var(--paper);color:var(--ink);border-color:var(--line)">
-          <h4 style="color:var(--blood)">كيف نسعّر؟</h4>
-          <ul style="color:var(--ink-2)">
-            <li><i class="fa-solid fa-check"></i> نشتري بالوزن وبفاتورة ضريبية</li>
-            <li><i class="fa-solid fa-check"></i> نعلن بلد المنشأ لكل مستورد</li>
-            <li><i class="fa-solid fa-check"></i> لا خصومات وهمية، العروض الموسمية بترخيص وسعر قبل/بعد</li>
-            <li><i class="fa-solid fa-check"></i> الفرم والتتبيل أمامك</li>
-          </ul>
-        </div>
-      </aside>
+    <div class="promises">
+      <div class="promise"><span class="ic"><i class="fa-solid fa-id-card"></i></span><h3>هوية الذبيحة</h3><p>السلالة والمنشأ والمسلخ وساعة الذبح على بطاقة كل ذبيحة.</p></div>
+      <div class="promise"><span class="ic"><i class="fa-solid fa-scale-balanced"></i></span><h3>الوزن الصافي مضمون</h3><p>إيصال واتساب بالوزن قبل التنظيف وبعده.</p><span class="g">نقص جرامات؟ نعوّض ضعفها.</span></div>
+      <div class="promise"><span class="ic"><i class="fa-solid fa-sun"></i></span><h3>سعر اليوم معلن</h3><p>لوحة أسعار تُنشر كل يوم الساعة ٧ صباحاً.</p><span class="g">نفس السعر لكل العملاء.</span></div>
+      <div class="promise"><span class="ic"><i class="fa-solid fa-clock"></i></span><h3>موعدك محفوظ</h3><p>توصيل داخل ٣ كم خلال ساعة.</p><span class="g">تأخرنا؟ التوصيل علينا.</span></div>
     </div>
   </div>
 </section>
 
-<!-- ============ Dish picker ============ -->
-<section class="sec" id="dishes" style="padding-top:0">
+<!-- Prices -->
+<section class="sec" id="prices">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">لوحة سعر الفجر</span>
+      <h2>سعر اليوم، قبل أن تسأل</h2>
+      <p>نشتري يومياً من سوق الحلال، ونعلن السعر كل صباح.</p>
+    </div>
+    <div class="board">
+      <div class="board-top">
+        <div class="board-date" id="boardDate">—</div>
+        <span class="live">نُشرت ٧:٠٠ ص · شاملة الضريبة</span>
+      </div>
+      <div id="board"></div>
+      <div class="board-foot">
+        <p><span class="sample">استرشادية</span> أسعار نموذجية من سلّم التسعير، تُحدّث كل صباح بعد الافتتاح.</p>
+        <a class="btn btn-wa btn-sm" data-wa="أبغى أشترك في قناة أسعار الفجر" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> وصلني السعر يومياً</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dishes -->
+<section class="sec" id="dishes">
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">اختر طبختك.. لا قطعتك</span>
-      <h2>قل لنا وش تطبخ، ونعرف وش نقطّع</h2>
-      <p>اختر الطبخة وعدد الأشخاص ونوع اللحم، ونجهز القطع المناسبة بالكمية الصحيحة. كل كيس يحمل اسم طبختك.</p>
+      <h2>قل لنا وش تطبخ، <em>ونعرف وش نقطّع</em></h2>
     </div>
     <div class="dish-layout">
       <div class="dishes" id="dishGrid" role="group" aria-label="الطبخات"></div>
-      <div class="card recipe" id="recipe" aria-live="polite">
-        <div class="recipe-head">
-          <div>
-            <h3 id="rTitle">كبسة</h3>
-            <p class="tagline" id="rTag"></p>
+      <div class="recipe" id="recipe" aria-live="polite">
+        <h3 id="rTitle">كبسة</h3>
+        <div class="ctrls">
+          <div class="ctrl">
+            <span class="lbl" id="peopleLbl">الأشخاص</span>
+            <div class="stepper" role="group" aria-labelledby="peopleLbl">
+              <button type="button" id="pMinus" aria-label="أقل">−</button>
+              <output id="pOut">6</output>
+              <button type="button" id="pPlus" aria-label="أكثر">+</button>
+            </div>
+          </div>
+          <div class="ctrl" id="meatCtrl">
+            <span class="lbl">اللحم</span>
+            <div class="seg" id="meatSeg" role="group" aria-label="نوع اللحم"></div>
           </div>
         </div>
-        <div class="ctrl">
-          <span class="lbl" id="peopleLbl">عدد الأشخاص</span>
-          <div class="stepper" role="group" aria-labelledby="peopleLbl">
-            <button type="button" id="pMinus" aria-label="أقل">−</button>
-            <output id="pOut">6</output>
-            <button type="button" id="pPlus" aria-label="أكثر">+</button>
-          </div>
-        </div>
-        <div class="ctrl" id="meatCtrl">
-          <span class="lbl">نوع اللحم</span>
-          <div class="seg" id="meatSeg" role="group" aria-label="نوع اللحم"></div>
-        </div>
-        <div class="ctrl">
-          <span class="lbl">نقطّع لك</span>
-          <ul class="cuts" id="rCuts"></ul>
-        </div>
-        <div class="tip"><i class="fa-solid fa-utensils"></i><span id="rTip"></span></div>
+        <ul class="cuts" id="rCuts"></ul>
+        <p class="tip" id="rTip"></p>
         <div class="total">
-          <div>
-            <div class="k" id="rQty">—</div>
-            <div class="v num" id="rPrice">—</div>
-          </div>
-          <button class="btn btn-blood" id="addDish"><i class="fa-solid fa-plus"></i> أضف للطلب</button>
+          <div><div class="k" id="rQty">—</div><div class="v num" id="rPrice">—</div></div>
+          <button class="btn btn-blood" id="addDish">أضف للطلب</button>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ Weight promise ============ -->
-<section class="band sec" id="weight">
-  <div class="crown" style="--c:var(--mud);position:absolute;top:0;left:0;right:0"></div>
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">الوزن وزنك</span>
-      <h2>جرّب وعد الوزن بنفسك</h2>
-      <p>نرسل لك على واتساب وزن طلبك قبل التنظيف وبعده، وتدفع على الصافي فقط. وإذا وزنته عند الباب ولقيته ناقص، نعوّضك ضعف الفرق.</p>
-    </div>
-    <div class="scale-layout">
-      <div class="card scale-ctrl" style="color:var(--ink)">
-        <div class="ctrl">
-          <label for="wItem">القطعة</label>
-          <select id="wItem"></select>
-        </div>
-        <div class="ctrl">
-          <label for="wKg">الكمية المطلوبة: <b class="num" id="wKgOut">2.00</b> كجم</label>
-          <input type="range" id="wKg" min="0.5" max="10" step="0.25" value="2">
-        </div>
-        <div class="ctrl">
-          <label for="wDoor">الوزن على ميزان الباب: <b class="num" id="wDoorOut">2.000</b> كجم</label>
-          <input type="range" id="wDoor" min="-120" max="20" step="5" value="0" aria-describedby="wDoorHint">
-          <div class="range-row" id="wDoorHint"><span>−120 جم</span><span>الوزن المفوتر</span><span>+20 جم</span></div>
-        </div>
-        <div class="verdict ok" id="verdict"><i class="fa-solid fa-circle-check"></i><span>الوزن مطابق. هذا وعدنا.</span></div>
-        <p style="font-size:var(--t-xs);color:var(--ink-2)"><span class="sample">مثال توضيحي</span> حرّك ميزان الباب لترى كيف يُحسب التعويض.</p>
+<!-- Weight -->
+<section class="sec" id="weight">
+  <div class="wrap scale-layout">
+    <div class="scale-ctrl">
+      <div class="sec-head" style="margin-bottom:8px">
+        <span class="eyebrow">الوزن وزنك</span>
+        <h2>تدفع على الصافي. <em>وإن نقص، نعوّض الضعف</em></h2>
       </div>
-      <div class="phone" aria-label="معاينة إيصال واتساب">
-        <div class="phone-bar">
-          <span class="av">خج</span>
-          <div><b>خان جليلة</b><small>حساب أعمال موثّق</small></div>
-        </div>
-        <div class="chat" id="chat"></div>
+      <div class="ctrl"><label for="wItem">القطعة</label><select id="wItem"></select></div>
+      <div class="ctrl"><label for="wKg">الكمية: <b class="num" id="wKgOut">2.00</b> كجم</label><input type="range" id="wKg" min="0.5" max="10" step="0.25" value="2"></div>
+      <div class="ctrl">
+        <label for="wDoor">على ميزان الباب: <b class="num" id="wDoorOut">2.000</b> كجم</label>
+        <input type="range" id="wDoor" min="-120" max="20" step="5" value="-40">
+        <div class="range-row"><span>ناقص ١٢٠ جم</span><span>زائد ٢٠ جم</span></div>
       </div>
+      <p class="verdict" id="verdict"></p>
     </div>
-  </div>
-  <div class="crown up" style="--c:var(--mud);position:absolute;bottom:0;left:0;right:0"></div>
-</section>
-
-<!-- ============ Programs ============ -->
-<section class="sec" id="programs">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">برامج خان جليلة</span>
-      <h2>ما يقدمه أحد غيرنا في الشارع</h2>
-      <p>برامج صُممت لأهل الحي: لضيفك المفاجئ، ولكشتة الخميس، ولأضحيتك، ولمطبخ جارتك.</p>
-    </div>
-    <div class="programs">
-      <article class="card prog wide">
-        <span class="kicker"><i class="fa-solid fa-wallet"></i> محفظة مسبقة الدفع</span>
-        <h3>جمعية اللحم</h3>
-        <p>اشترك شهرياً وخذ رصيداً أكبر مما دفعت، مع أولوية حجز الأضحية وتثبيت سعرها. ميزانية لحم البيت محسومة قبل رمضان والعيد.</p>
-        <div class="calc">
-          <div class="seg" id="jamSeg" role="group" aria-label="قيمة الاشتراك">
-            <button type="button" data-v="500" aria-pressed="true">٥٠٠ ريال</button>
-            <button type="button" data-v="1000" aria-pressed="false">١٬٠٠٠ ريال</button>
-          </div>
-          <div class="calc-row"><span>تدفع شهرياً</span><b id="jamPay">500</b></div>
-          <div class="calc-row big"><span>رصيدك</span><b id="jamBal">525</b></div>
-          <div class="calc-row"><span>هدية الجمعية</span><b id="jamGift" style="color:var(--ok)">+25</b></div>
-          <div class="calc-row"><span>يعادل تقريباً من النعيمي</span><b id="jamKg">6.0 كجم</b></div>
-        </div>
-        <a class="btn btn-blood btn-sm" id="jamCta" data-wa="أبغى أشترك في جمعية اللحم بـ 500 ريال شهرياً" href="#" target="_blank" rel="noopener">اشترك في الجمعية</a>
-      </article>
-
-      <article class="card prog wide">
-        <span class="kicker"><i class="fa-solid fa-calendar-check"></i> من رمضان، بالتقسيط</span>
-        <h3>أضحيتك بموعد</h3>
-        <p>احجز أضحيتك من رمضان على ٣ دفعات بسعر مثبت، وموعد تسليم بالساعة، وفيديو الذبح والتقطيع يصلك على واتساب. مسافر في العيد؟ خيار الوكالة مع توزيع عبر جمعية خيرية مرخّصة.</p>
-        <div class="calc">
-          <div class="seg" id="adhaSeg" role="group" aria-label="حجم الأضحية">
-            <button type="button" data-v="1350" aria-pressed="true">نعيمي هرفي</button>
-            <button type="button" data-v="1550" aria-pressed="false">نعيمي وسط</button>
-          </div>
-          <div class="calc-row"><span>السعر المثبت <span class="sample">مثال</span></span><b id="adhaP">1350</b></div>
-          <div class="calc-row big"><span>كل دفعة (× ٣)</span><b id="adhaI">450</b></div>
-        </div>
-        <span class="meta"><span class="pill soon">الحجز يفتح في رمضان ١٤٤٨</span></span>
-      </article>
-
-      <article class="card prog">
-        <span class="kicker"><i class="fa-solid fa-bolt"></i> خط سريع على واتساب</span>
-        <h3>ضيف على غفلة</h3>
-        <p>اكتب «ضيوف» واستلم نصف أو ذبيحة كاملة مقطّعة للمفطح أو الكبسة خلال ساعتين، مع تتبيلة جاهزة إن رغبت.</p>
-        <a class="btn btn-wa btn-sm" data-wa="ضيوف" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> أرسل «ضيوف»</a>
-      </article>
-
-      <article class="card prog">
-        <span class="kicker"><i class="fa-solid fa-fire"></i> نوفمبر إلى مارس</span>
-        <h3>صندوق الكشتة</h3>
-        <p>ريش وكباب وأوصال وكبدة وتتبيلة. اطلبه حتى مساء الأربعاء واستلمه الخميس من مسار الاستلام السريع أمام المحل. آخر محطة قبل البر، على طريق الخرج.</p>
-        <span class="meta" id="kashtaPill"></span>
-      </article>
-
-      <article class="card prog">
-        <span class="kicker"><i class="fa-solid fa-house-chimney-user"></i> الجار قبل الدار</span>
-        <h3>كرت الجيرة</h3>
-        <p>مع كل طلب كرت برمز فريد تعطيه جارك: له أول كيلو مفروم علينا، ولك ختم مضاعف في بطاقتك. ١٠ أختام = كيلو مجاني.</p>
-        <span class="meta"><span class="pill">الثلاثاء والأربعاء: ختم مضاعف</span></span>
-      </article>
-
-      <article class="card prog">
-        <span class="kicker"><i class="fa-solid fa-kitchen-set"></i> للأسر المنتجة والمطابخ</span>
-        <h3>ميزان المطابخ</h3>
-        <p>أسعار جملة، وتوريد صباحي، وكشف حساب شهري للأسر المنتجة والمطابخ والمطاعم الشعبية، وملصق «لحمنا من خان جليلة» على عبواتكم.</p>
-        <a class="btn btn-ghost btn-sm" data-wa="أبغى أفتح حساب في ميزان المطابخ" href="#" target="_blank" rel="noopener" style="color:var(--blood)">افتح حساب مطبخ</a>
-      </article>
-
-      <article class="card prog">
-        <span class="kicker"><i class="fa-solid fa-bowl-food"></i> بالتعاون مع أسرة منتجة</span>
-        <h3>طبخة الحي</h3>
-        <p>على كل كيس رمز يفتح فيديو طبختك من طباخة الحي. قائمة التقطيع بالعربية والإنجليزية والأردية.</p>
-        <span class="meta"><span class="pill">Cut menu in English</span><span class="pill">اردو مینو</span></span>
-      </article>
-
-      <article class="card prog">
-        <span class="kicker"><i class="fa-solid fa-gift"></i> رمضان وتموينته</span>
-        <h3>تموينة رمضان</h3>
-        <p>حزم فريزر منزلية مقسمة لأيام الشهر: قطع الإفطار والسحور، وصندوق يوم التأسيس لأطباق نجدية: جريش ومرقوق وقرصان.</p>
-        <span class="meta"><span class="pill soon">تُطلق ٣١ يناير</span></span>
-      </article>
+    <div class="phone" aria-label="معاينة إيصال واتساب">
+      <div class="phone-bar"><span class="av">خج</span><div><b>خان جليلة</b><small>حساب أعمال</small></div></div>
+      <div class="chat" id="chat"></div>
     </div>
   </div>
 </section>
 
-<!-- ============ Delivery ============ -->
-<section class="sec" id="delivery" style="padding-top:0">
-  <div class="wrap deliv">
-    <figure class="map" style="margin:0">
-      <svg viewBox="0 0 400 340" role="img" aria-label="نطاق التوصيل ٣ كم حول المحل">
-        <rect width="400" height="340" rx="10" fill="var(--paper-2)"/>
-        <g stroke="var(--line-2)" stroke-width="1" fill="none">
-          <path d="M0 90 L400 120"/><path d="M0 230 L400 210"/><path d="M120 0 L150 340"/><path d="M290 0 L270 340"/>
-        </g>
-        <path d="M60 0 L340 340" stroke="var(--gold)" stroke-width="7" stroke-linecap="round" opacity=".55"/>
-        <text x="300" y="300" font-size="12" fill="var(--ink-2)" font-family="IBM Plex Sans Arabic, sans-serif" text-anchor="middle" transform="rotate(50 300 300)">طريق الخرج</text>
-        <path d="M0 175 L400 160" stroke="var(--blood)" stroke-width="4" stroke-linecap="round" opacity=".5"/>
-        <text x="80" y="160" text-anchor="middle" font-size="12" fill="var(--ink-2)" font-family="IBM Plex Sans Arabic, sans-serif">شارع معن بن زائدة</text>
-        <circle cx="200" cy="168" r="150" fill="var(--blood)" fill-opacity=".05" stroke="var(--blood)" stroke-width="1.5" stroke-dasharray="6 6"/>
-        <circle cx="200" cy="168" r="100" fill="var(--blood)" fill-opacity=".06" stroke="var(--blood)" stroke-width="1" stroke-dasharray="3 5" opacity=".7"/>
-        <circle cx="200" cy="168" r="50" fill="var(--blood)" fill-opacity=".08" stroke="var(--blood)" stroke-width="1" stroke-dasharray="3 5" opacity=".7"/>
-        <text x="200" y="28" font-size="11" fill="var(--blood)" text-anchor="middle" font-family="IBM Plex Mono, monospace">3 km</text>
-        <text x="200" y="78" font-size="11" fill="var(--blood)" text-anchor="middle" font-family="IBM Plex Mono, monospace">2 km</text>
-        <text x="200" y="128" font-size="11" fill="var(--blood)" text-anchor="middle" font-family="IBM Plex Mono, monospace">1 km</text>
-        <text x="320" y="255" text-anchor="middle" font-size="13" fill="var(--ink)" font-weight="600" font-family="IBM Plex Sans Arabic, sans-serif">حي المنصورة</text>
-        <g transform="translate(200 168)">
-          <circle r="16" fill="var(--blood)" opacity=".2"><animate attributeName="r" values="10;22;10" dur="2.6s" repeatCount="indefinite"/></circle>
-          <path d="M0 -22 C-10 -22 -14 -14 -14 -9 C-14 0 0 10 0 10 C0 10 14 0 14 -9 C14 -14 10 -22 0 -22 Z" fill="var(--blood)"/>
-          <circle cy="-10" r="5" fill="var(--paper)"/>
-        </g>
-        <text x="160" y="200" font-size="13" fill="var(--blood)" font-weight="700" text-anchor="middle" font-family="Reem Kufi, sans-serif">خان جليلة</text>
-      </svg>
-      <figcaption>مخطط توضيحي، ليس بمقياس رسم دقيق</figcaption>
-    </figure>
-    <div>
-      <div class="sec-head" style="margin-bottom:24px">
-        <span class="eyebrow">موعدك محفوظ</span>
-        <h2>داخل ٣ كم؟ لحمك عندك خلال ساعة</h2>
-      </div>
-      <div class="facts">
-        <div class="fact"><span class="ic"><i class="fa-solid fa-stopwatch"></i></span><div><h4>ساعة واحدة من التأكيد للباب</h4><p>تأخرنا عن الساعة؟ التوصيل علينا وهدية في طلبك القادم.</p></div></div>
-        <div class="fact"><span class="ic"><i class="fa-solid fa-snowflake"></i></span><div><h4>مبرّد ومغلّف حسب طلبك</h4><p>تغليف عادي أو فاكيوم، وكل كيس باسم طبخته ووزنه.</p></div></div>
-        <div class="fact"><span class="ic"><i class="fa-solid fa-calendar-day"></i></span><div><h4>العيد والمناسبات بساعة محددة</h4><p>حجز بمواعيد وسعة محسوبة، فلا انتظار ولا «خلصت الذبائح».</p></div></div>
-        <div class="fact"><span class="ic"><i class="fa-solid fa-car-side"></i></span><div><h4>مسار استلام سريع</h4><p>اطلب على واتساب، وتوقف أمام المحل ونسلمك في سيارتك.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ Story ============ -->
-<section class="band deep sec" id="story">
+<!-- Story -->
+<section class="band" id="story">
   <div class="crown" style="--c:var(--mud);position:absolute;top:0;left:0;right:0"></div>
   <div class="wrap story">
     <blockquote>من خان الضيافة<br><span>إلى سفرتك.</span></blockquote>
     <div class="body">
       <span class="eyebrow">قصة الاسم</span>
-      <p>يُروى أن اسم الحي القديم «الخنشليلة» أصله «خان جليلة»: بيتٌ فتحته امرأة من أهل الدرعية لضيافة الحجاج على طريقهم. أخذنا الاسم لأنه يشبه ما نريد أن نكونه: بيت ضيافة يعرفه أهل الحي، ويثقون بما يُقدَّم فيه.</p>
-      <p>نصوّر رحلتنا كل أسبوع، من سوق الحلال فجراً حتى الميزان، ونجاوب أسئلتكم بلا تجميل:</p>
-      <div class="series">
-        <div><b>من الحلال للميزان</b><span>أسبوعياً</span></div>
-        <div><b>الجزار يجاوب: حرّي ولا نعيمي؟</b><span>٣ مرات أسبوعياً</span></div>
-        <div><b>خمّن الوزن، والأقرب يكسب كيلو</b><span>أسبوعياً</span></div>
-        <div><b>بالأرقام: كم ذبيحة وصلت هذا الأسبوع</b><span>أسبوعياً</span></div>
-      </div>
+      <p>يُروى أن اسم الحي القديم «الخنشليلة» أصله «خان جليلة»: بيتٌ فتحته امرأة من أهل الدرعية لضيافة الحجاج على طريقهم.</p>
+      <p>أخذنا الاسم لأنه يشبه ما نريد أن نكونه: بيت يعرفه أهل الحي، ويثقون بما يُقدَّم فيه.</p>
     </div>
   </div>
   <div class="crown up" style="--c:var(--mud);position:absolute;bottom:0;left:0;right:0"></div>
 </section>
 
-<!-- ============ Road to opening ============ -->
-<section class="sec" id="road">
+<!-- Programs -->
+<section class="sec" id="programs">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">الطريق إلى الافتتاح</span>
-      <h2>نبني الملحمة أمامكم، خطوة بخطوة</h2>
+      <span class="eyebrow">برامجنا</span>
+      <h2>لضيفك المفاجئ، <em>ولكشتة الخميس، ولأضحيتك</em></h2>
     </div>
-    <div class="road" id="road-list">
-      <div class="stage" data-from="2026-10-01" data-to="2027-01-23"><span class="dot">١</span><time>منتصف ديسمبر – منتصف يناير</time><h4>قبل الافتتاح</h4><p>الهوية وقناة واتساب، سلسلة «نبني ملحمة من الصفر»، وتسجيل المؤسسين.</p></div>
-      <div class="stage" data-from="2027-01-24" data-to="2027-01-30"><span class="dot">٢</span><time>٢٤ – ٣٠ يناير ٢٠٢٧</time><h4>أسبوع الافتتاح</h4><p>افتتاح تجريبي للمؤسسين، تذوّق داخل المحل، وأول لوحة لسعر الفجر.</p></div>
-      <div class="stage" data-from="2027-01-31" data-to="2027-02-07"><span class="dot">٣</span><time>٣١ يناير – ٧ فبراير</time><h4>ما قبل رمضان</h4><p>إطلاق جمعية اللحم وتموينة رمضان، وأول عرض للمطابخ الشعبية.</p></div>
-      <div class="stage" data-from="2027-02-08" data-to="2027-03-08"><span class="dot">٤</span><time>٨ فبراير – ٨ مارس</time><h4>رمضان</h4><p>قطع الإفطار والسحور، صندوق يوم التأسيس، وحجوزات ذبائح العيد بمواعيد.</p></div>
-      <div class="stage" data-from="2027-03-09" data-to="2027-05-31"><span class="dot">٥</span><time>مارس – مايو</time><h4>بعد الفطر حتى الأضحى</h4><p>«أضحيتك بموعد» بالتقسيط، وتوسيع «ميزان المطابخ».</p></div>
+    <div class="programs">
+      <article class="prog">
+        <span class="kicker">محفظة مسبقة الدفع</span>
+        <h3>جمعية اللحم</h3>
+        <p>اشترك شهرياً وخذ رصيداً أكبر مما دفعت، مع أولوية حجز الأضحية.</p>
+        <div class="calc">
+          <div class="seg" id="jamSeg" role="group" aria-label="قيمة الاشتراك">
+            <button type="button" data-v="500" aria-pressed="true">500</button>
+            <button type="button" data-v="1000" aria-pressed="false">1,000</button>
+          </div>
+          <span class="res">رصيدك <b id="jamBal">525</b> ريال</span>
+        </div>
+      </article>
+      <article class="prog">
+        <span class="kicker">من رمضان، على ٣ دفعات</span>
+        <h3>أضحيتك بموعد</h3>
+        <p>سعر مثبت، وموعد تسليم بالساعة، وفيديو الذبح يصلك على واتساب.</p>
+        <div class="calc">
+          <div class="seg" id="adhaSeg" role="group" aria-label="حجم الأضحية">
+            <button type="button" data-v="1350" aria-pressed="true">هرفي</button>
+            <button type="button" data-v="1550" aria-pressed="false">وسط</button>
+          </div>
+          <span class="res">الدفعة <b id="adhaI">450</b> ريال</span>
+        </div>
+      </article>
+      <article class="prog">
+        <span class="kicker">خط سريع على واتساب</span>
+        <h3>ضيف على غفلة</h3>
+        <p>اكتب «ضيوف» واستلم نصف أو ذبيحة كاملة مقطّعة خلال ساعتين.</p>
+        <div class="foot"><a class="btn btn-wa btn-sm" data-wa="ضيوف" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> أرسل «ضيوف»</a></div>
+      </article>
+      <article class="prog">
+        <span class="kicker">نوفمبر إلى مارس</span>
+        <h3>صندوق الكشتة</h3>
+        <p>ريش وكباب وأوصال وتتبيلة. اطلبه حتى الأربعاء واستلمه الخميس في سيارتك.</p>
+        <div class="foot" id="kashtaPill"></div>
+      </article>
+    </div>
+    <div class="more">
+      <span><b>كرت الجيرة</b> أول كيلو مفروم لجارك علينا</span>
+      <span><b>ميزان المطابخ</b> أسعار جملة للأسر المنتجة</span>
+      <span><b>تموينة رمضان</b> حزم فريزر لأيام الشهر</span>
     </div>
   </div>
 </section>
 
-<!-- ============ Founders ============ -->
-<section class="band sec" id="founders">
-  <div class="crown" style="--c:var(--mud);position:absolute;top:0;left:0;right:0"></div>
+<!-- Delivery -->
+<section class="sec" id="delivery">
+  <div class="wrap deliv">
+    <div>
+      <div class="sec-head" style="margin-bottom:20px">
+        <span class="eyebrow">التوصيل</span>
+        <h2>داخل ٣ كم؟ <em>لحمك عندك خلال ساعة</em></h2>
+      </div>
+      <div class="facts">
+        <div class="fact"><i class="fa-solid fa-stopwatch"></i><div><h4>ساعة من التأكيد للباب</h4><p>تأخرنا؟ التوصيل علينا وهدية في طلبك القادم.</p></div></div>
+        <div class="fact"><i class="fa-solid fa-snowflake"></i><div><h4>مبرّد، وكل كيس باسم طبخته</h4><p>تغليف عادي أو فاكيوم حسب طلبك.</p></div></div>
+        <div class="fact"><i class="fa-solid fa-calendar-day"></i><div><h4>العيد بساعة محددة</h4><p>حجز بمواعيد وسعة محسوبة، بلا انتظار.</p></div></div>
+      </div>
+    </div>
+    <figure class="map">
+      <svg viewBox="0 0 400 320" role="img" aria-label="نطاق التوصيل ٣ كم حول المحل">
+        <rect width="400" height="320" fill="var(--paper)"/>
+        <path d="M80 0 L330 320" stroke="var(--gold)" stroke-width="6" stroke-linecap="round" opacity=".45"/>
+        <path d="M0 165 L400 150" stroke="var(--blood)" stroke-width="3" opacity=".35"/>
+        <text x="345" y="250" font-size="11" fill="var(--ink-2)" font-family="Readex Pro, sans-serif" text-anchor="middle">طريق الخرج</text>
+        <text x="70" y="152" font-size="11" fill="var(--ink-2)" font-family="Readex Pro, sans-serif" text-anchor="middle">معن بن زائدة</text>
+        <circle cx="200" cy="158" r="135" fill="var(--blood)" fill-opacity=".05" stroke="var(--blood)" stroke-width="1.2" stroke-dasharray="5 6"/>
+        <circle cx="200" cy="158" r="68" fill="none" stroke="var(--blood)" stroke-width="1" stroke-dasharray="3 6" opacity=".5"/>
+        <text x="200" y="36" font-size="10" fill="var(--blood)" text-anchor="middle" font-family="IBM Plex Mono, monospace">3 km</text>
+        <g transform="translate(200 158)">
+          <path d="M0 -20 C-9 -20 -13 -13 -13 -8 C-13 0 0 9 0 9 C0 9 13 0 13 -8 C13 -13 9 -20 0 -20 Z" fill="var(--blood)"/>
+          <circle cy="-9" r="4.5" fill="var(--paper)"/>
+        </g>
+        <text x="150" y="196" font-size="12" fill="var(--blood)" font-weight="600" text-anchor="middle" font-family="Kufam, sans-serif">خان جليلة</text>
+      </svg>
+      <figcaption>مخطط توضيحي · حي المنصورة، جنوب وسط الرياض</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Founders -->
+<section class="sec" id="founders">
   <div class="wrap founders">
     <div>
-      <div class="sec-head">
+      <div class="sec-head" style="margin-bottom:28px">
         <span class="eyebrow">عضوية المؤسسين · أول ٣٠٠ عميل</span>
-        <h2>كن من أول ٣٠٠، واحصل على مزايا مدى الحياة</h2>
-        <p>سجّل قبل الافتتاح أو في أسبوعه الأول، وتبقى هذه المزايا لك ما دام خان جليلة مفتوحاً.</p>
+        <h2>كن من أول ٣٠٠، <em>ومزاياك مدى الحياة</em></h2>
       </div>
       <ul class="perks">
-        <li><i class="fa-solid fa-infinity"></i><span><b>فرم وتتبيل وتغليف فاكيوم مجاناً</b> مدى الحياة</span></li>
-        <li><i class="fa-solid fa-star"></i><span><b>أولوية حجز العيد</b> قبل فتح الحجز للعامة</span></li>
+        <li><i class="fa-solid fa-infinity"></i><span><b>فرم وتتبيل وفاكيوم مجاناً</b> مدى الحياة</span></li>
+        <li><i class="fa-solid fa-star"></i><span><b>أولوية حجز العيد</b> قبل العامة</span></li>
         <li><i class="fa-solid fa-gift"></i><span><b>أول كيلو مفروم هدية</b> مع أول طلب</span></li>
         <li><i class="fa-solid fa-signature"></i><span><b>اسمك على جدار المؤسسين</b> داخل المحل</span></li>
       </ul>
-      <div class="wall" id="wall" aria-label="معاينة جدار المؤسسين"></div>
     </div>
-    <form class="card form" id="fForm" novalidate>
-      <h3 style="color:var(--blood);font-size:1.4rem">سجّل مقعدك</h3>
+    <form class="form" id="fForm" novalidate>
       <div class="row2">
-        <div class="field"><label for="fName">الاسم كما تحب أن يُكتب على الجدار</label><input id="fName" required autocomplete="name" placeholder="مثال: أبو فهد"></div>
-        <div class="field"><label for="fPhone">رقم الجوال</label><input id="fPhone" required inputmode="tel" autocomplete="tel" placeholder="05xxxxxxxx" dir="ltr" style="text-align:right"></div>
+        <div class="field"><label for="fName">الاسم على الجدار</label><input id="fName" autocomplete="name" placeholder="مثال: أبو فهد"></div>
+        <div class="field"><label for="fPhone">رقم الجوال</label><input id="fPhone" inputmode="tel" autocomplete="tel" placeholder="05xxxxxxxx" dir="ltr" style="text-align:right"></div>
       </div>
-      <div class="row2">
-        <div class="field"><label for="fArea">الحي</label>
-          <select id="fArea"><option>المنصورة</option><option>الشميسي</option><option>العزيزية</option><option>منفوحة</option><option>الفيصلية</option><option>حي آخر</option></select>
-        </div>
-        <div class="field"><label for="fDish">طبختكم المفضلة</label>
-          <select id="fDish"></select>
-        </div>
+      <div class="field"><label for="fArea">الحي</label>
+        <select id="fArea"><option>المنصورة</option><option>الشميسي</option><option>العزيزية</option><option>منفوحة</option><option>الفيصلية</option><option>حي آخر</option></select>
       </div>
       <p class="fine" id="fErr" hidden style="color:var(--warn)"></p>
       <button class="btn btn-wa" type="submit"><i class="fa-brands fa-whatsapp"></i> أكّد التسجيل على واتساب</button>
-      <p class="fine">يفتح واتساب برسالة جاهزة. يكتمل تسجيلك حين تصلنا الرسالة ونرد عليك برقم مقعدك.</p>
+      <p class="fine">يفتح واتساب برسالة جاهزة، ونرد عليك برقم مقعدك.</p>
     </form>
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
+<!-- FAQ -->
 <section class="sec" id="faq">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="sec-head center">
       <span class="eyebrow">الجزار يجاوب</span>
-      <h2>أسئلة تسمعها كل ملحمة، وجوابنا عليها</h2>
+      <h2>أسئلة متكررة</h2>
     </div>
     <div class="faq">
-      <details open><summary>وش الفرق بين النعيمي والحرّي والنجدي؟</summary><p>الثلاثة ضأن بلدي. النعيمي معروف بطراوته ودهنه المعتدل وهو الأكثر طلباً للمندي والكبسة. الحرّي لحمه أقل دهناً قليلاً ويناسب المرق والمثلوثة. النجدي ذبيحته أكبر وتصافيه أعلى. على بطاقة كل ذبيحة تجد السلالة مكتوبة، فلا خلط بين التسميات.</p></details>
-      <details><summary>كيف أتأكد أن اللحم بلدي وليس مستورد؟</summary><p>كل ذبيحة معلقة عليها بطاقة هوية: السلالة، بلد المنشأ، المسلخ، ساعة الذبح، ورمز يفتح صورة ختم المسلخ. والمستورد نبيعه باسمه وبلد منشئه وسعره، في ثلاجة مستقلة.</p></details>
-      <details><summary>لماذا يختلف السعر من يوم لآخر؟</summary><p>لأننا نشتري يومياً من سوق الحلال بالوزن، وسعر الكيلو الحي يتحرك. بدل أن نخفي ذلك نعلنه: لوحة سعر الفجر تُنشر كل يوم الساعة ٧ صباحاً، والسعر نفسه لكل العملاء.</p></details>
-      <details><summary>أي قطعة أطلب للمندي؟</summary><p>الكتف والرقبة والأضلاع من غنم طري، بقطع كبيرة بالعظم. استخدم «اختر طبختك» في الأعلى، وحدد عدد الأشخاص، ونحسب لك الكمية.</p></details>
-      <details><summary>وش يصير لو وصلني الطلب ناقص؟</summary><p>زِنه عند الباب على ميزان المندوب أو ميزانك. أي نقص عن الوزن الصافي في إيصال الواتساب نعوّضك ضعفه فوراً، بدون نقاش.</p></details>
+      <details><summary>وش الفرق بين النعيمي والحرّي والنجدي؟</summary><p>الثلاثة ضأن بلدي. النعيمي طري ودهنه معتدل وهو الأشهر للمندي والكبسة. الحرّي أقل دهناً ويناسب المرق. النجدي ذبيحته أكبر. السلالة مكتوبة على بطاقة كل ذبيحة.</p></details>
+      <details><summary>كيف أتأكد أن اللحم بلدي؟</summary><p>بطاقة الذبيحة فيها المنشأ والمسلخ وساعة الذبح ورمز يفتح صورة الختم. والمستورد نبيعه باسمه وبلد منشئه، في ثلاجة مستقلة.</p></details>
+      <details><summary>لماذا يتغير السعر من يوم لآخر؟</summary><p>لأننا نشتري يومياً من سوق الحلال بالوزن. بدل أن نخفي ذلك نعلنه كل صباح الساعة ٧، بنفس السعر للجميع.</p></details>
+      <details><summary>وش يصير لو وصلني الطلب ناقص؟</summary><p>زِنه عند الباب. أي نقص عن الوزن الصافي في إيصال الواتساب نعوّضك ضعفه فوراً.</p></details>
     </div>
   </div>
 </section>
 
-<!-- ============ Footer ============ -->
 <footer>
   <div class="crown up" style="--c:var(--mud)"></div>
   <div class="wrap">
     <div>
-      <a class="brand" href="#home" style="color:var(--on-band)"><span><b>خان جليلة</b><small>من خان الضيافة إلى سفرتك</small></span></a>
-      <p style="margin-top:14px;max-width:40ch">ملحمة حي في شارع صالح بن سبعان، على بعد خطوات من شارع معن بن زائدة، حي المنصورة، جنوب وسط الرياض.</p>
+      <a class="brand" href="#home" style="color:var(--on-band)"><b>خان جليلة</b></a>
+      <p style="margin-top:12px;max-width:38ch">شارع صالح بن سبعان، قرب شارع معن بن زائدة، حي المنصورة، الرياض.</p>
     </div>
     <div>
       <h4>أوقات العمل</h4>
-      <ul>
-        <li>يومياً <span class="num">7:00 ص – 11:30 م</span></li>
-        <li>مع استراحة صلاة الجمعة</li>
-        <li>نفتح ٢٤ يناير ٢٠٢٧</li>
-      </ul>
+      <ul><li>يومياً <span class="num">7:00 – 23:30</span></li><li>استراحة صلاة الجمعة</li></ul>
     </div>
     <div>
       <h4>تواصل</h4>
-      <ul>
-        <li>واتساب: <span class="num" dir="ltr" id="waNum">+966 50 000 0000</span><button class="copy" id="copyNum" type="button">نسخ</button></li>
-        <li>سناب شات · تيك توك · إنستغرام</li>
-        <li><a href="#founders">سجّل في عضوية المؤسسين</a></li>
-      </ul>
+      <ul><li>واتساب <span class="num" dir="ltr" id="waNum">+966 50 000 0000</span><button class="copy" id="copyNum" type="button">نسخ</button></li><li>سناب شات · تيك توك</li></ul>
     </div>
   </div>
   <div class="wrap legal">
-    <span>© <span id="yr">2026</span> خان جليلة. جميع الحقوق محفوظة.</span>
+    <span>© <span id="yr">2026</span> خان جليلة</span>
     <span>الأسعار شاملة ضريبة القيمة المضافة ١٥٪</span>
   </div>
 </footer>
 
 <a class="fab" data-wa="مرحباً خان جليلة" href="#" target="_blank" rel="noopener" aria-label="تواصل على واتساب"><i class="fa-brands fa-whatsapp"></i></a>
 
-<!-- Basket drawer -->
 <div class="scrim" id="scrim"></div>
 <aside class="drawer" id="drawer" aria-label="سلة الطلب" aria-hidden="true">
-  <div class="drawer-head">
-    <h3>طلبك</h3>
-    <button class="x" id="closeDrawer" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
-  </div>
+  <div class="drawer-head"><h3>طلبك</h3><button class="x" id="closeDrawer" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button></div>
   <div class="drawer-body">
     <div id="lines"></div>
     <div class="field"><label for="oSlot">موعد التوصيل</label><select id="oSlot"></select></div>
@@ -901,12 +675,11 @@ footer .legal{border-top:1px solid rgba(255,255,255,.08);padding-block:18px;font
     <div class="field"><label for="oNote">ملاحظة للجزار</label><textarea id="oNote" rows="2" placeholder="مثال: قطع كبيرة، شيل الدهن الزايد"></textarea></div>
   </div>
   <div class="drawer-foot">
-    <div class="total"><div><div class="k">التقدير قبل الوزن النهائي</div><div class="v num" id="dTotal">0 <small>ريال</small></div></div></div>
+    <div class="total"><div><div class="k">تقدير قبل الوزن النهائي</div><div class="v num" id="dTotal">0 <small>ريال</small></div></div></div>
     <a class="btn btn-wa" id="sendOrder" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> أرسل الطلب على واتساب</a>
-    <p style="font-size:var(--t-xs);color:var(--ink-2)">يفتح واتساب برسالة طلبك جاهزة. نؤكد الوزن والسعر النهائي في إيصال قبل التقطيع.</p>
   </div>
 </aside>
-<div class="toast" id="toast" role="status"><i class="fa-solid fa-check"></i><span id="toastTxt"></span></div>
+<div class="toast" id="toast" role="status"></div>
 
 </div>
 
@@ -914,227 +687,163 @@ footer .legal{border-top:1px solid rgba(255,255,255,.08);padding-block:18px;font
 (function(){
 document.documentElement.lang='ar';document.documentElement.dir='rtl';
 
-/* ---------- Config ---------- */
-const CONFIG={
-  wa:'966500000000',                       // رقم واتساب الأعمال
-  opening:new Date('2027-01-24T07:00:00+03:00')
-};
-const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const CONFIG={wa:'966500000000',opening:new Date('2027-01-24T07:00:00+03:00')};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const fmt=n=>Math.round(n).toLocaleString('en-US');
 const waLink=t=>'https://wa.me/'+CONFIG.wa+'?text='+encodeURIComponent(t);
 const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+$$('[data-wa]').forEach(a=>{a.href=waLink(a.dataset.wa)});
 
-function bindWa(root){(root||document).querySelectorAll('[data-wa]').forEach(a=>{a.href=waLink(a.dataset.wa)})}
-bindWa();
+let tt;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),2000)}
 
-/* ---------- Toast ---------- */
-let tt;function toast(m){$('#toastTxt').textContent=m;$('#toast').classList.add('show');clearTimeout(tt);tt=setTimeout(()=>$('#toast').classList.remove('show'),2200)}
-
-/* ---------- Mobile nav ---------- */
 const nav=$('#nav'),mb=$('#menuBtn');
 mb.addEventListener('click',()=>{const o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
 nav.addEventListener('click',e=>{if(e.target.tagName==='A'){nav.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
 
-/* ---------- Countdown ---------- */
-function tick(){
-  let d=CONFIG.opening-new Date();
-  if(d<=0){$('#cd').innerHTML='<div style="min-width:auto;padding:8px 16px"><b style="font-size:1.1rem">مفتوحون الآن</b><span>٧ ص – ١١:٣٠ م</span></div>';return}
-  const D=Math.floor(d/864e5),H=Math.floor(d/36e5)%24,M=Math.floor(d/6e4)%60,S=Math.floor(d/1e3)%60;
-  $('#cdD').textContent=D;$('#cdH').textContent=String(H).padStart(2,'0');$('#cdM').textContent=String(M).padStart(2,'0');$('#cdS').textContent=String(S).padStart(2,'0');
-}
-tick();setInterval(tick,1000);
+/* Opening */
+(function(){const d=Math.ceil((CONFIG.opening-new Date())/864e5);if(d<=0){$('.opening').innerHTML='<span class="dot-live"></span><b>مفتوحون يومياً</b> · 7:00 ص – 11:30 م'}else $('#cdD').textContent=d})();
 
-/* ---------- Tag: time + QR ---------- */
+/* Tag */
 (function(){
-  const now=new Date();
-  const dateStr=now.toLocaleDateString('ar-SA-u-ca-gregory-nu-latn',{day:'numeric',month:'long'});
-  $('#tagTime').textContent='05:40 · '+dateStr;
-  // decorative QR-like pattern (deterministic)
-  const n=21;let s=7,cells='';const rnd=()=>{s=(s*9301+49297)%233280;return s/233280};
-  const finder=(x,y)=>`<rect x="${x}" y="${y}" width="7" height="7" fill="#1a0f0c"/><rect x="${x+1}" y="${y+1}" width="5" height="5" fill="#fff"/><rect x="${x+2}" y="${y+2}" width="3" height="3" fill="#1a0f0c"/>`;
+  const ds=new Date().toLocaleDateString('ar-SA-u-ca-gregory-nu-latn',{day:'numeric',month:'long'});
+  $('#tagTime').textContent='05:40 · '+ds;
+  let s=7,cells='';const rnd=()=>{s=(s*9301+49297)%233280;return s/233280};
+  const f=(x,y)=>`<rect x="${x}" y="${y}" width="7" height="7" fill="#1a0f0c"/><rect x="${x+1}" y="${y+1}" width="5" height="5" fill="#fff"/><rect x="${x+2}" y="${y+2}" width="3" height="3" fill="#1a0f0c"/>`;
   const inF=(x,y)=>(x<8&&y<8)||(x>12&&y<8)||(x<8&&y>12);
-  for(let y=0;y<n;y++)for(let x=0;x<n;x++){if(!inF(x,y)&&rnd()>.52)cells+=`<rect x="${x}" y="${y}" width="1" height="1" fill="#1a0f0c"/>`}
-  $('#qr').innerHTML=`<svg viewBox="0 0 21 21" shape-rendering="crispEdges">${finder(0,0)+finder(14,0)+finder(0,14)+cells}</svg>`;
+  for(let y=0;y<21;y++)for(let x=0;x<21;x++)if(!inF(x,y)&&rnd()>.52)cells+=`<rect x="${x}" y="${y}" width="1" height="1" fill="#1a0f0c"/>`;
+  $('#qr').innerHTML=`<svg viewBox="0 0 21 21" shape-rendering="crispEdges">${f(0,0)+f(14,0)+f(0,14)+cells}</svg>`;
 })();
 
-/* ---------- Prices ---------- */
+/* Prices */
 const PRICES=[
-  {id:'naimi', name:'نعيمي / حرّي / نجدي بلدي', note:'بالعظم · مذبوح اليوم', price:88, unit:'كجم'},
-  {id:'tais',  name:'تيس بلدي', note:'بالعظم', price:84, unit:'كجم'},
-  {id:'hashi', name:'حاشي بلدي', note:'لحم إبل صغير', price:62, unit:'كجم'},
-  {id:'ijl',   name:'عجل بلدي', note:'بالعظم', price:60, unit:'كجم'},
-  {id:'imp',   name:'ضأن مستورد مبرّد', note:'بلد المنشأ معلن على الختم', price:56, unit:'كجم'},
-  {id:'beef',  name:'بقري مستورد مبرّد', note:'بالعظم · بدون عظم 60', price:46, unit:'كجم'},
-  {id:'harfi', name:'ذبيحة نعيمي هرفي', note:'شامل التقطيع والتغليف والتوصيل داخل ٣ كم', price:1350, unit:'ذبيحة', whole:true},
-  {id:'wasat', name:'ذبيحة نعيمي وسط', note:'شامل التقطيع والتغليف والتوصيل داخل ٣ كم', price:1550, unit:'ذبيحة', whole:true},
-  {id:'mince', name:'مفروم / كباب حسب الطلب', note:'يُفرم أمامك، فوق سعر القطعة', price:5, unit:'كجم', plus:true}
+  {id:'naimi',name:'نعيمي / حرّي / نجدي بلدي',note:'بالعظم · مذبوح اليوم',price:88,unit:'كجم'},
+  {id:'tais',name:'تيس بلدي',note:'بالعظم',price:84,unit:'كجم'},
+  {id:'hashi',name:'حاشي بلدي',note:'لحم إبل صغير',price:62,unit:'كجم'},
+  {id:'ijl',name:'عجل بلدي',note:'بالعظم',price:60,unit:'كجم'},
+  {id:'imp',name:'ضأن مستورد مبرّد',note:'بلد المنشأ معلن',price:56,unit:'كجم'},
+  {id:'beef',name:'بقري مستورد مبرّد',note:'بالعظم',price:46,unit:'كجم'},
+  {id:'harfi',name:'ذبيحة نعيمي هرفي',note:'شامل التقطيع والتوصيل',price:1350,unit:'ذبيحة',whole:true},
+  {id:'wasat',name:'ذبيحة نعيمي وسط',note:'شامل التقطيع والتوصيل',price:1550,unit:'ذبيحة',whole:true},
+  {id:'mince',name:'مفروم / كباب',note:'يُفرم أمامك، فوق سعر القطعة',price:5,unit:'كجم',plus:true}
 ];
 const P=Object.fromEntries(PRICES.map(p=>[p.id,p]));
 (function(){
   const now=new Date();
   const g=now.toLocaleDateString('ar-SA-u-ca-gregory-nu-latn',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
-  let h='';try{h=now.toLocaleDateString('ar-SA-u-ca-islamic-umalqura-nu-latn',{day:'numeric',month:'long',year:'numeric'})}catch(e){}
+  let h='';try{h=now.toLocaleDateString('ar-SA-u-ca-islamic-umalqura-nu-latn',{day:'numeric',month:'long'})}catch(e){}
   $('#boardDate').textContent=g+(h?' · '+h:'');
-  const board=$('#board');let delay=0;
-  board.innerHTML=PRICES.map(p=>{
-    const digits=String(p.price).split('').map(d=>{delay+=45;return `<span class="flap anim" style="animation-delay:${delay}ms">${d}</span>`}).join('');
-    return `<div class="prow"><div class="pn">${p.name}<small>${p.note}</small></div>
-      ${p.plus?'<span></span>':`<div class="add"><button class="chip" data-add="${p.id}"><i class="fa-solid fa-plus"></i> ${p.whole?'أضف ذبيحة':'أضف ١ كجم'}</button></div>`}
-      <div class="flaps" aria-label="${p.plus?'زيادة ':''}${p.price} ريال لكل ${p.unit}">${p.plus?'<span class="plus">+</span>':''}${digits}<span class="cur">ريال/${p.unit}</span></div></div>`;
+  let delay=0;
+  $('#board').innerHTML=PRICES.map(p=>{
+    const dg=String(p.price).split('').map(d=>{delay+=40;return `<span class="flap anim" style="animation-delay:${delay}ms">${d}</span>`}).join('');
+    return `<div class="prow"><div class="pn"><b>${p.name}</b><small>${p.note}</small></div><div class="flaps" aria-label="${p.price} ريال لكل ${p.unit}">${p.plus?'<span class="plus">+</span>':''}${dg}<span class="cur">ريال/${p.unit}</span></div></div>`;
   }).join('');
-  board.addEventListener('click',e=>{
-    const b=e.target.closest('[data-add]');if(!b)return;const p=P[b.dataset.add];
-    addItem(p.whole?{label:p.name,detail:'ذبيحة كاملة · '+p.note,qty:1,price:p.price}:{label:p.name,detail:'١ كجم · تقطيع حسب الطلب',qty:1,unit:'كجم',price:p.price});
-  });
 })();
 
-/* ---------- Dishes ---------- */
+/* Dishes */
 const DISHES=[
-  {id:'kabsa',name:'كبسة',sub:'قطع كبيرة بالعظم',per:.4,meats:['naimi','hashi','imp'],cuts:['كتف ورقبة وفخذ بالعظم، قطع كبيرة تناسب القِدر','عظم إضافي للمرق والطعم'],tip:'حمّس اللحم مع البصل حتى يتغير لونه قبل إضافة الماء، يثبت الطعم ويقلل الزفر.'},
-  {id:'mandi',name:'مندي',sub:'كتف ورقبة وأضلاع',per:.45,meats:['naimi','imp'],cuts:['كتف ورقبة من غنم طري، ينفصل عن العظم بعد التنور','أضلاع كاملة للمشاركة'],tip:'للمندي اختر هرفي صغير؛ دهنه يذوب على الرز ويعطي اللمعة المعروفة.'},
-  {id:'marqooq',name:'مرقوق',sub:'مكعبات صغيرة مع عظم',per:.25,meats:['naimi','hashi','imp'],cuts:['مكعبات صغيرة تستوي بسرعة مع العجين والخضار','عظم للشوربة'],tip:'أضف الكوسة والقرع آخر ربع ساعة حتى لا تذوب في المرق.'},
-  {id:'jareesh',name:'جريش',sub:'لحم صغير بدون عظم',per:.15,meats:['naimi','hashi','ijl'],cuts:['مكعبات صغيرة بدون عظم تذوب في الجريش','قطعة عظم للمرق إن رغبت'],tip:'اطبخ اللحم مع الجريش من البداية على نار هادئة؛ كلما طال الطبخ صار أنعم.'},
-  {id:'qursan',name:'قرصان',sub:'مكعبات متوسطة بالعظم',per:.25,meats:['naimi','hashi'],cuts:['مكعبات متوسطة بالعظم من الكتف','عظم للمرق'],tip:'قلّل الماء في المرق حتى يتشربه القرصان بدون أن يعجن.'},
-  {id:'mathlootha',name:'مثلوثة',sub:'قطع متوسطة بالعظم',per:.35,meats:['naimi','hashi'],cuts:['قطع متوسطة بالعظم من الكتف والفخذ','رقبة مقطعة للمرق'],tip:'اللحم يستوي أولاً، ثم الجريش والقرصان والرز بالترتيب.'},
-  {id:'mafatah',name:'مفطّح',sub:'ذبيحة كاملة',whole:true,cuts:['ذبيحة كاملة تُقطع على أصول المفطّح','الرأس والكوارع منفصلة عند الطلب'],tip:'الهرفي يكفي ١٠–١٢ شخصاً، والوسط ١٥–١٨. احجز قبلها بيوم لضمان الوزن الذي تريده.'},
-  {id:'madhbi',name:'مظبي',sub:'نصف ذبيحة مفرودة',per:.5,meats:['naimi','imp'],cuts:['قطع كبيرة مفرودة ومشقوقة جاهزة للحجر','تتبيلة المظبي الخاصة عند الطلب'],tip:'سخّن الحجر جيداً قبل وضع اللحم، والملح الخشن يكفي.'},
-  {id:'mashawi',name:'مشاوي',sub:'ريش وأوصال وكباب',per:.35,meats:['naimi','ijl'],mince:.3,cuts:['ريش مقطعة بسماكة إصبع','أوصال مكعبات متساوية للسيخ','كباب مفروم أمامك مع دهن ٢٠٪'],tip:'أخرج اللحم من الثلاجة قبل الشوي بنصف ساعة؛ يستوي بالتساوي ويبقى طرياً.'},
-  {id:'kofta',name:'كفتة',sub:'مفروم بدهن موزون',per:.2,meats:['naimi','ijl','beef'],mince:1,cuts:['مفروم طازج يُفرم أمامك','نسبة دهن ٢٠٪ تمسك الكفتة'],tip:'اعجن المفروم مع البصل المبشور المصفّى من مائه حتى لا تتفكك.'},
-  {id:'nihari',name:'نهاري',sub:'موزة وساق بالنخاع',per:.3,meats:['ijl','imp'],cuts:['موزة وساق بالعظم والنخاع','قطع كبيرة للطبخ البطيء'],tip:'الطبخ البطيء ٦ ساعات يذيب الكولاجين ويعطي المرق قوامه.'},
-  {id:'curry',name:'كاري',sub:'مكعبات من الفخذ',per:.3,meats:['naimi','ijl','beef'],cuts:['مكعبات متساوية من الفخذ','مع عظم قليل لطعم الصلصة'],tip:'حمّر البهارات في الزيت قبل اللحم، يتضاعف طعمها.'}
+  {id:'kabsa',name:'كبسة',sub:'قطع كبيرة بالعظم',per:.4,meats:['naimi','hashi','imp'],cuts:['كتف ورقبة وفخذ بالعظم، قطع كبيرة','عظم إضافي للمرق'],tip:'حمّس اللحم مع البصل قبل الماء، يثبت الطعم ويقلل الزفر.'},
+  {id:'mandi',name:'مندي',sub:'كتف ورقبة وأضلاع',per:.45,meats:['naimi','imp'],cuts:['كتف ورقبة من غنم طري','أضلاع كاملة'],tip:'اختر هرفي صغير؛ دهنه يذوب على الرز.'},
+  {id:'marqooq',name:'مرقوق',sub:'مكعبات صغيرة',per:.25,meats:['naimi','hashi','imp'],cuts:['مكعبات صغيرة تستوي بسرعة','عظم للشوربة'],tip:'أضف الكوسة والقرع آخر ربع ساعة.'},
+  {id:'jareesh',name:'جريش',sub:'لحم بدون عظم',per:.15,meats:['naimi','hashi','ijl'],cuts:['مكعبات صغيرة بدون عظم','قطعة عظم للمرق'],tip:'نار هادئة ووقت أطول، يصير أنعم.'},
+  {id:'qursan',name:'قرصان',sub:'مكعبات بالعظم',per:.25,meats:['naimi','hashi'],cuts:['مكعبات متوسطة بالعظم من الكتف','عظم للمرق'],tip:'قلّل الماء حتى يتشربه القرصان.'},
+  {id:'mathlootha',name:'مثلوثة',sub:'قطع متوسطة',per:.35,meats:['naimi','hashi'],cuts:['قطع متوسطة من الكتف والفخذ','رقبة للمرق'],tip:'اللحم أولاً، ثم الجريش والقرصان والرز.'},
+  {id:'mafatah',name:'مفطّح',sub:'ذبيحة كاملة',whole:true,cuts:['ذبيحة كاملة على أصول المفطّح','الرأس والكوارع منفصلة عند الطلب'],tip:'الهرفي يكفي ١٠–١٢ شخصاً، والوسط ١٥–١٨.'},
+  {id:'mashawi',name:'مشاوي',sub:'ريش وأوصال وكباب',per:.35,meats:['naimi','ijl'],mince:.3,cuts:['ريش بسماكة إصبع','أوصال متساوية للسيخ','كباب يُفرم أمامك'],tip:'أخرج اللحم قبل الشوي بنصف ساعة.'},
+  {id:'kofta',name:'كفتة',sub:'مفروم بدهن موزون',per:.2,meats:['naimi','ijl','beef'],mince:1,cuts:['مفروم طازج أمامك','دهن ٢٠٪ يمسك الكفتة'],tip:'صفِّ البصل المبشور من مائه.'}
 ];
-const MEAT_NAMES={naimi:'نعيمي',hashi:'حاشي',ijl:'عجل',imp:'مستورد',beef:'بقري',tais:'تيس'};
+const MEAT={naimi:'نعيمي',hashi:'حاشي',ijl:'عجل',imp:'مستورد',beef:'بقري'};
 let dish=DISHES[0],people=6,meat='naimi';
-
-const grid=$('#dishGrid');
-grid.innerHTML=DISHES.map(d=>`<button type="button" class="dish" data-id="${d.id}" aria-pressed="false"><b>${d.name}</b><span>${d.sub}</span></button>`).join('');
-grid.addEventListener('click',e=>{const b=e.target.closest('.dish');if(!b)return;selectDish(b.dataset.id,true)});
-
+$('#dishGrid').innerHTML=DISHES.map(d=>`<button type="button" class="dish" data-id="${d.id}" aria-pressed="false"><b>${d.name}</b><span>${d.sub}</span></button>`).join('');
+$('#dishGrid').addEventListener('click',e=>{const b=e.target.closest('.dish');if(b)selectDish(b.dataset.id,true)});
 function selectDish(id,user){
   dish=DISHES.find(d=>d.id===id);
   $$('.dish').forEach(b=>b.setAttribute('aria-pressed',b.dataset.id===id));
-  if(dish.whole){people=Math.max(people,10)}
-  else if(!dish.meats.includes(meat)) meat=dish.meats[0];
+  if(dish.whole)people=Math.max(people,10);else if(!dish.meats.includes(meat))meat=dish.meats[0];
   renderRecipe();
-  if(user&&window.innerWidth<900) $('#recipe').scrollIntoView({behavior:'smooth',block:'start'});
+  if(user&&innerWidth<900)$('#recipe').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function calc(){
-  if(dish.whole){
-    const n=Math.ceil(people/18);const per=people/n;const size=per<=12?'harfi':'wasat';
-    return {kg:null,count:n,size,price:n*P[size].price,label:`${n>1?n+' × ':''}${P[size].name}`};
-  }
+  if(dish.whole){const n=Math.ceil(people/18),size=people/n<=12?'harfi':'wasat';return{count:n,price:n*P[size].price,label:(n>1?n+' × ':'')+P[size].name}}
   const kg=Math.max(.5,Math.round(people*dish.per*4)/4);
-  const base=P[meat].price, mince=(dish.mince||0)*P.mince.price;
-  return {kg,price:kg*(base+mince)};
+  return{kg,price:kg*(P[meat].price+(dish.mince||0)*P.mince.price)};
 }
 function renderRecipe(){
-  $('#rTitle').textContent=dish.name;$('#rTag').textContent=dish.sub;$('#pOut').textContent=people;
+  $('#rTitle').textContent=dish.name;$('#pOut').textContent=people;
   $('#rCuts').innerHTML=dish.cuts.map(c=>`<li>${c}</li>`).join('');
-  $('#rTip').innerHTML='<b>من طباخة الحي:</b> '+dish.tip;
-  const mc=$('#meatCtrl');
-  if(dish.whole){mc.hidden=true}else{
-    mc.hidden=false;
-    $('#meatSeg').innerHTML=dish.meats.map(m=>`<button type="button" data-m="${m}" aria-pressed="${m===meat}">${MEAT_NAMES[m]} · <span class="num">${P[m].price}</span></button>`).join('');
-  }
+  $('#rTip').textContent=dish.tip;
+  $('#meatCtrl').hidden=!!dish.whole;
+  if(!dish.whole)$('#meatSeg').innerHTML=dish.meats.map(m=>`<button type="button" data-m="${m}" aria-pressed="${m===meat}">${MEAT[m]}</button>`).join('');
   const r=calc();
-  if(dish.whole){$('#rQty').textContent=`${r.label} · تكفي ${people} شخصاً`}
-  else $('#rQty').textContent=`${r.kg.toFixed(2)} كجم ${MEAT_NAMES[meat]} لـ ${people} أشخاص`;
+  $('#rQty').textContent=dish.whole?`${r.label} · ${people} شخصاً`:`${r.kg.toFixed(2)} كجم ${MEAT[meat]} · ${people} أشخاص`;
   $('#rPrice').innerHTML=`${fmt(r.price)} <small>ريال تقريباً</small>`;
 }
-$('#meatSeg').addEventListener('click',e=>{const b=e.target.closest('[data-m]');if(!b)return;meat=b.dataset.m;renderRecipe()});
+$('#meatSeg').addEventListener('click',e=>{const b=e.target.closest('[data-m]');if(b){meat=b.dataset.m;renderRecipe()}});
 $('#pMinus').addEventListener('click',()=>{people=Math.max(dish.whole?6:1,people-1);renderRecipe()});
 $('#pPlus').addEventListener('click',()=>{people=Math.min(60,people+1);renderRecipe()});
 $('#addDish').addEventListener('click',()=>{
   const r=calc();
-  if(dish.whole) addItem({label:'مفطّح · '+r.label,detail:`لـ ${people} شخصاً · تقطيع مفطّح`,qty:r.count,price:r.price/r.count});
-  else addItem({label:`${dish.name} · ${MEAT_NAMES[meat]}`,detail:`${dish.cuts[0]} · لـ ${people} أشخاص`,qty:r.kg,unit:'كجم',price:r.price/r.kg});
+  if(dish.whole)addItem({label:'مفطّح · '+r.label,detail:`لـ ${people} شخصاً`,qty:r.count,price:r.price/r.count});
+  else addItem({label:`${dish.name} · ${MEAT[meat]}`,detail:`${dish.cuts[0]} · ${people} أشخاص`,qty:r.kg,unit:'كجم',price:r.price/r.kg});
 });
 selectDish('kabsa');
 
-/* ---------- Weight simulator ---------- */
+/* Weight */
 const wItem=$('#wItem'),wKg=$('#wKg'),wDoor=$('#wDoor');
-wItem.innerHTML=PRICES.filter(p=>!p.whole&&!p.plus).map(p=>`<option value="${p.id}">${p.name} · ${p.price} ريال/كجم</option>`).join('');
+wItem.innerHTML=PRICES.filter(p=>!p.whole&&!p.plus).map(p=>`<option value="${p.id}">${p.name} · ${p.price} ريال</option>`).join('');
 function renderWeight(){
-  const p=P[wItem.value],kg=+wKg.value,door=+wDoor.value;
-  const before=kg*1.07, after=kg, billed=after*p.price, doorKg=after+door/1000;
+  const p=P[wItem.value],kg=+wKg.value,door=+wDoor.value,before=kg*1.07,doorKg=kg+door/1000,short=Math.max(0,-door),comp=short*2,sar=comp/1000*p.price,nm=p.name.split(' /')[0];
   $('#wKgOut').textContent=kg.toFixed(2);$('#wDoorOut').textContent=doorKg.toFixed(3);
-  const short=Math.max(0,-door), comp=short*2, compSar=comp/1000*p.price;
   const v=$('#verdict');
-  if(short>0){v.className='verdict short';v.innerHTML=`<i class="fa-solid fa-scale-unbalanced"></i><span>ناقص <b class="num">${short}</b> جم. نعوّضك ضعفها: <b class="num">${comp}</b> جم من ${p.name.split(' /')[0]}، بقيمة <b class="num">${compSar.toFixed(2)}</b> ريال، فوراً.</span>`}
-  else{v.className='verdict ok';v.innerHTML=`<i class="fa-solid fa-circle-check"></i><span>الوزن مطابق أو أكثر. هذا وعدنا.</span>`}
-  const t=new Date(),hh=t.getHours(),mm=String(t.getMinutes()).padStart(2,'0'),tm=(m)=>`${String((hh)%24).padStart(2,'0')}:${String((+mm+m)%60).padStart(2,'0')}`;
-  $('#chat').innerHTML=`
-   <div class="bubble me">أبغى ${kg.toFixed(2)} كجم ${p.name.split(' /')[0]}، تقطيع كبسة<time>${tm(0)}</time></div>
-   <div class="bubble">إيصال الوزن قبل التقطيع
-     <div class="rc"><span>الوزن قبل التنظيف</span><span>${before.toFixed(3)} kg</span>
-     <span>الدهن والزوائد</span><span>−${(before-after).toFixed(3)} kg</span>
-     <span class="sum">الوزن الصافي</span><span class="sum">${after.toFixed(3)} kg</span>
-     <span>السعر للكيلو</span><span>${p.price} SAR</span>
-     <span class="sum">الإجمالي</span><span class="sum">${billed.toFixed(2)} SAR</span></div>
-     <time>${tm(3)}</time></div>
-   <div class="bubble">طلبك في الطريق، يوصلك خلال ساعة. زِنه عند الباب، والوزن الصافي ${after.toFixed(3)} كجم.<time>${tm(9)}</time></div>
-   ${short>0?`<div class="bubble me">على ميزان الباب ${doorKg.toFixed(3)} كجم 🤔<time>${tm(40)}</time></div><div class="bubble">معك حق، ناقص ${short} جم. أضفنا لك ${comp} جم في طلبك القادم أو رصيد ${compSar.toFixed(2)} ريال الآن، اختر اللي يناسبك.<time>${tm(41)}</time></div>`:''}`;
+  if(short){v.className='verdict short';v.innerHTML=`<i class="fa-solid fa-scale-unbalanced"></i><span>ناقص <b class="num">${short}</b> جم ← نعوّضك <b class="num">${comp}</b> جم (≈ <b class="num">${sar.toFixed(2)}</b> ريال)</span>`}
+  else{v.className='verdict ok';v.innerHTML=`<i class="fa-solid fa-circle-check"></i><span>الوزن مطابق. هذا وعدنا.</span>`}
+  const t=new Date(),tm=m=>{const d=new Date(t.getTime()+m*6e4);return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')};
+  $('#chat').innerHTML=`<div class="bubble me">أبغى ${kg.toFixed(2)} كجم ${nm}<time>${tm(0)}</time></div>
+   <div class="bubble">إيصال الوزن
+     <div class="rc"><span>قبل التنظيف</span><span>${before.toFixed(3)} kg</span><span>الزوائد</span><span>−${(before-kg).toFixed(3)} kg</span><span class="sum">الصافي</span><span class="sum">${kg.toFixed(3)} kg</span><span class="sum">الإجمالي</span><span class="sum">${(kg*p.price).toFixed(2)} SAR</span></div><time>${tm(3)}</time></div>
+   ${short?`<div class="bubble me">على ميزان الباب ${doorKg.toFixed(3)} كجم<time>${tm(40)}</time></div><div class="bubble">معك حق، ناقص ${short} جم. أضفنا لك ${comp} جم، أو رصيد ${sar.toFixed(2)} ريال.<time>${tm(41)}</time></div>`:`<div class="bubble">طلبك في الطريق، يوصلك خلال ساعة.<time>${tm(9)}</time></div>`}`;
 }
 [wItem,wKg,wDoor].forEach(el=>el.addEventListener('input',renderWeight));renderWeight();
 
-/* ---------- Programs ---------- */
-const jam={500:525,1000:1060};
+/* Programs */
 function segBind(id,fn){const s=$(id);s.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;s.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));fn(+b.dataset.v)})}
-segBind('#jamSeg',v=>{$('#jamPay').textContent=fmt(v);$('#jamBal').textContent=fmt(jam[v]);$('#jamGift').textContent='+'+(jam[v]-v);$('#jamKg').textContent=(jam[v]/P.naimi.price).toFixed(1)+' كجم';const c=$('#jamCta');c.dataset.wa=`أبغى أشترك في جمعية اللحم بـ ${v} ريال شهرياً`;c.href=waLink(c.dataset.wa)});
-$('#jamKg').textContent=(525/P.naimi.price).toFixed(1)+' كجم';
-segBind('#adhaSeg',v=>{$('#adhaP').textContent=fmt(v);$('#adhaI').textContent=fmt(v/3)});
-$('#adhaP').textContent=fmt(1350);
-(function(){const m=new Date().getMonth();const on=m>=10||m<=2;$('#kashtaPill').innerHTML=on?'<span class="pill on">متاح هذا الموسم · اطلب قبل الأربعاء</span>':'<span class="pill">يعود في نوفمبر</span>'})();
+segBind('#jamSeg',v=>{$('#jamBal').textContent=fmt({500:525,1000:1060}[v])});
+segBind('#adhaSeg',v=>{$('#adhaI').textContent=fmt(v/3)});
+(function(){const m=new Date().getMonth(),on=m>=10||m<=2;$('#kashtaPill').innerHTML=on?'<span class="pill on">متاح هذا الموسم</span>':'<span class="pill">يعود في نوفمبر</span>'})();
 
-/* ---------- Road: current stage ---------- */
-(function(){const t=new Date();let found=false;$$('.stage').forEach(s=>{const a=new Date(s.dataset.from),b=new Date(s.dataset.to+'T23:59:59');if(!found&&t<=b){s.classList.add('now');found=true}})})();
-
-/* ---------- Founders ---------- */
-$('#fDish').innerHTML=DISHES.map(d=>`<option>${d.name}</option>`).join('');
-const wall=['أبو فهد','أم سارة','آل الدوسري','أبو ريان','مطبخ أم خالد','عائلة العتيبي','أبو عبدالله','أم نورة'];
-$('#wall').innerHTML='<span class="sample" style="border:0">معاينة</span>'+wall.map(n=>`<span>${n}</span>`).join('')+'<span style="border-style:solid;color:var(--gold)">مكانك هنا</span>';
+/* Founders */
 $('#fForm').addEventListener('submit',e=>{
   e.preventDefault();
   const name=$('#fName').value.trim(),phone=$('#fPhone').value.replace(/\s/g,''),err=$('#fErr');
-  if(!name){err.hidden=false;err.textContent='اكتب الاسم الذي تحب أن يظهر على جدار المؤسسين.';$('#fName').focus();return}
-  if(!/^(05|\+9665|9665)\d{8}$/.test(phone)){err.hidden=false;err.textContent='اكتب رقم جوال سعودي يبدأ بـ 05 ويتكون من 10 أرقام.';$('#fPhone').focus();return}
+  if(!name){err.hidden=false;err.textContent='اكتب الاسم الذي يظهر على جدار المؤسسين.';$('#fName').focus();return}
+  if(!/^(05|\+9665|9665)\d{8}$/.test(phone)){err.hidden=false;err.textContent='اكتب رقم جوال سعودي يبدأ بـ 05 من 10 أرقام.';$('#fPhone').focus();return}
   err.hidden=true;
-  const msg=`أبغى أسجل في عضوية المؤسسين 👑\nالاسم على الجدار: ${name}\nالجوال: ${phone}\nالحي: ${$('#fArea').value}\nطبختنا المفضلة: ${$('#fDish').value}`;
-  const a=document.createElement('a');a.href=waLink(msg);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+  const a=document.createElement('a');a.href=waLink(`أبغى أسجل في عضوية المؤسسين\nالاسم على الجدار: ${name}\nالجوال: ${phone}\nالحي: ${$('#fArea').value}`);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
   toast('جهّزنا رسالة التسجيل في واتساب');
 });
 
-/* ---------- Basket ---------- */
+/* Basket */
 let basket=store.get('kj_basket',[]);
-function addItem(it){basket.push(it);saveBasket();toast('أُضيف: '+it.label);bump()}
-function saveBasket(){store.set('kj_basket',basket);renderBasket()}
-function bump(){const c=$('#basketCount');c.animate?.([{transform:'scale(1.5)'},{transform:'scale(1)'}],{duration:300})}
+function addItem(it){basket.push(it);store.set('kj_basket',basket);renderBasket();toast('أُضيف للطلب: '+it.label)}
 function renderBasket(){
-  $('#basketCount').textContent=basket.length;
-  const L=$('#lines');
-  if(!basket.length){L.innerHTML='<div class="empty"><i class="fa-solid fa-bag-shopping"></i><p>طلبك فاضي. اختر طبختك أو أضف من لوحة سعر الفجر.</p><a class="btn btn-ghost btn-sm" href="#dishes" data-close style="color:var(--blood)">وش نطبخ اليوم؟</a></div>'}
-  else L.innerHTML=basket.map((b,i)=>`<div class="line"><b>${b.label}</b><span class="num">${b.unit?b.qty.toFixed(2)+' كجم':'× '+b.qty}</span><button class="rm" data-rm="${i}" aria-label="حذف"><i class="fa-solid fa-trash-can"></i></button><small>${b.detail}</small><span class="num" style="color:var(--ink-2);font-size:.85rem">${fmt(b.qty*b.price)} ر</span></div>`).join('');
+  const c=$('#basketCount');c.textContent=basket.length;c.dataset.n=basket.length;
+  $('#lines').innerHTML=basket.length?basket.map((b,i)=>`<div class="line"><b>${b.label}</b><span class="num">${b.unit?b.qty.toFixed(2)+' كجم':'× '+b.qty}</span><button class="rm" data-rm="${i}" aria-label="حذف"><i class="fa-solid fa-xmark"></i></button><small>${b.detail}</small></div>`).join(''):'<div class="empty"><p>طلبك فاضي.</p><a class="btn btn-link" href="#dishes" data-close style="color:var(--blood)">اختر طبختك</a></div>';
   const tot=basket.reduce((s,b)=>s+b.qty*b.price,0);
   $('#dTotal').innerHTML=`${fmt(tot)} <small>ريال</small>`;
-  const msg=['السلام عليكم خان جليلة، طلب جديد 🛒','',...basket.map((b,i)=>`${i+1}. ${b.label} — ${b.unit?b.qty.toFixed(2)+' كجم':b.qty+' ذبيحة'} (${b.detail})`),'',`الموعد: ${$('#oSlot').value}`,`التغليف: ${$('#oPack').value}`,$('#oNote').value.trim()?`ملاحظة: ${$('#oNote').value.trim()}`:'',`التقدير: ${fmt(tot)} ريال`,'','أنتظر إيصال الوزن قبل التقطيع.'].filter((l,i,a)=>l!==''||a[i-1]!=='').join('\n');
-  const s=$('#sendOrder');s.href=waLink(msg);s.toggleAttribute('aria-disabled',!basket.length);s.style.opacity=basket.length?1:.5;s.style.pointerEvents=basket.length?'auto':'none';
+  const note=$('#oNote').value.trim();
+  const msg=['السلام عليكم خان جليلة، طلب جديد:','',...basket.map((b,i)=>`${i+1}. ${b.label} — ${b.unit?b.qty.toFixed(2)+' كجم':b.qty+' ذبيحة'}`),'',`الموعد: ${$('#oSlot').value}`,`التغليف: ${$('#oPack').value}`].concat(note?[`ملاحظة: ${note}`]:[]).concat([`التقدير: ${fmt(tot)} ريال`]).join('\n');
+  const s=$('#sendOrder');s.href=waLink(msg);s.style.opacity=basket.length?1:.45;s.style.pointerEvents=basket.length?'auto':'none';
 }
-(function(){
-  const sel=$('#oSlot'),o=['بأسرع وقت (خلال ساعة)'];const now=new Date();let h=Math.max(8,now.getHours()+2);
-  for(let i=0;i<6&&h<=23;i++,h+=2){o.push(`اليوم ${String(h).padStart(2,'0')}:00`)}
-  o.push('بكرة الصبح 8:00','بكرة العصر 16:00');sel.innerHTML=o.map(x=>`<option>${x}</option>`).join('');
-})();
+(function(){const o=['بأسرع وقت (خلال ساعة)'];let h=Math.max(8,new Date().getHours()+2);for(let i=0;i<5&&h<=23;i++,h+=2)o.push(`اليوم ${String(h).padStart(2,'0')}:00`);o.push('بكرة 8:00 ص','بكرة 4:00 م');$('#oSlot').innerHTML=o.map(x=>`<option>${x}</option>`).join('')})();
 ['oSlot','oPack','oNote'].forEach(id=>$('#'+id).addEventListener('input',renderBasket));
-$('#lines').addEventListener('click',e=>{const r=e.target.closest('[data-rm]');if(r){basket.splice(+r.dataset.rm,1);saveBasket()}if(e.target.closest('[data-close]'))closeD()});
 const dr=$('#drawer'),sc=$('#scrim');
 function openD(){dr.classList.add('open');sc.classList.add('open');dr.setAttribute('aria-hidden','false');$('#closeDrawer').focus()}
 function closeD(){dr.classList.remove('open');sc.classList.remove('open');dr.setAttribute('aria-hidden','true')}
+$('#lines').addEventListener('click',e=>{const r=e.target.closest('[data-rm]');if(r){basket.splice(+r.dataset.rm,1);store.set('kj_basket',basket);renderBasket()}if(e.target.closest('[data-close]'))closeD()});
 $('#basketBtn').addEventListener('click',openD);$('#closeDrawer').addEventListener('click',closeD);sc.addEventListener('click',closeD);
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeD()});
 renderBasket();
 
-/* ---------- Footer ---------- */
 $('#yr').textContent=new Date().getFullYear();
-$('#copyNum').addEventListener('click',()=>{const t='+'+CONFIG.wa;navigator.clipboard?.writeText(t).then(()=>toast('نُسخ الرقم'),()=>{const r=document.createRange();r.selectNode($('#waNum'));getSelection().removeAllRanges();getSelection().addRange(r)})});
+$('#copyNum').addEventListener('click',()=>{navigator.clipboard?.writeText('+'+CONFIG.wa).then(()=>toast('نُسخ الرقم'),()=>{const r=document.createRange();r.selectNode($('#waNum'));getSelection().removeAllRanges();getSelection().addRange(r)})});
 })();
 </script>
